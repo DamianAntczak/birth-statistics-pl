@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29167 132.29167"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient15">
+      <stop
+         style="stop-color:#bfe0ff;stop-opacity:1;"
+         offset="0"
+         id="stop16" />
+      <stop
+         style="stop-color:#8fcbff;stop-opacity:1;"
+         offset="0.87000012"
+         id="stop17" />
+    </linearGradient>
+    <linearGradient
+       id="swatch15">
+      <stop
+         style="stop-color:#bfe0ff;stop-opacity:1;"
+         offset="0"
+         id="stop15" />
+    </linearGradient>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <linearGradient
+       xlink:href="#linearGradient15"
+       id="linearGradient17"
+       x1="0"
+       y1="66.145836"
+       x2="132.29167"
+       y2="66.145836"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     style="fill:url(#linearGradient17);fill-opacity:1;stroke:none;stroke-width:2.11667;stroke-linecap:round;stroke-dasharray:none"
+     id="rect2"
+     width="132.29167"
+     height="132.29167"
+     x="0"
+     y="0"
+     d="m 15.00946,0 h 102.27275 c 8.31524,0 15.00946,6.6942194 15.00946,15.00946 v 102.27275 c 0,8.31524 -6.69422,15.00946 -15.00946,15.00946 H 15.00946 C 6.6942194,132.29167 0,125.59745 0,117.28221 V 15.00946 C 0,6.6942194 6.6942194,0 15.00946,0 Z"
+     ry="15.00946" />
+  <g
+     id="layer1">
+    <path
+       style="fill:none;stroke:#e86a92;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#Triangle)"
+       d="M 13.229167,19.870209 V 119.0625 h 99.218753"
+       id="path1" />
+    <path
+       style="fill:none;stroke:#e86a92;stroke-width:3.175;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1"
+       d="m 13.331253,82.134904 c 0,0 22.354744,-47.514551 35.641468,-5.698331 1.208265,3.802679 40.79483,-64.598503 71.322399,8.231478"
+       id="path2" />
+  </g>
+</svg>
