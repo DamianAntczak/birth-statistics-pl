@@ -13,11 +13,12 @@ hospitals.forEach((hospital) => {
 })
 
 export default defineConfig({
-    base: 'birth-statistics-pl',
-    plugins: [vue(),
+    base: '/birth-statistics-pl',
+    plugins: [
+        vue(),
         Sitemap({
-            hostname: 'https://damianantczak.github.io/birth-statistics-pl',
-            dynamicRoutes: dynamicRoutes,
+            hostname: 'https://damianantczak.github.io',
+            dynamicRoutes: ['/birth-statistics-pl', ...dynamicRoutes],
             changefreq: 'weekly',
             priority: 0.8
         })
