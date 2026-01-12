@@ -4,17 +4,31 @@ import SelectHospital from "./SelectHospital.vue";
 import LineChart from "./LineChart.vue";
 import SelectStatsType from "./SelectStatsType.vue";
 import {ref} from "vue";
+import {useHead} from "@unhead/vue";
 
 const statsType = ref()
 const hospitalId = ref()
+const hospitalName = ref()
+
+useHead({
+  title: () => hospitalName.value ? 'Statystyki porodów 2010-2025 | ' + hospitalName.value : 'Statystyki porodów w Polsce 2010–2025 | Szpitale',
+  meta: [
+    {
+      name: 'description',
+      content: () => 'Interaktywne wykresy statystyk porodowych dla ' + (hospitalName.value ? hospitalName.value: 'szpitali' ) + ' z lat 2010–2025: liczba porodów, odsetek cięć cesarskich, odsetek nacięć krocza oraz odsetek znieczuleń.'
+    }
+  ]
+})
 
 function onStatsTypeChanged(event: any) {
   statsType.value = event
 }
 
-function onHospitalIdChanged(event: any) {
-  hospitalId.value = event
+function onHospitalChanged(payload: any) {
+  hospitalId.value = payload.hospitalId
+  hospitalName.value = payload.hospitalName
 }
+
 
 </script>
 
@@ -22,7 +36,7 @@ function onHospitalIdChanged(event: any) {
   <n-grid cols="10" item-responsive responsive="screen">
     <n-grid-item span="0 m:1 l:2">
     </n-grid-item>
-    <n-grid-item  span="10 m:8 l:6">
+    <n-grid-item span="10 m:8 l:6">
       <div class="content-container">
 
         <n-page-header title="Statystyki porodów dla szpitali"
@@ -36,7 +50,7 @@ function onHospitalIdChanged(event: any) {
         </n-page-header>
         <n-divider/>
         <SelectHospital
-            @hospitalIdChanged="onHospitalIdChanged($event)"
+            @hospitalChanged="onHospitalChanged"
             :stats-type="statsType"
         />
         <n-flex justify="center">
@@ -44,9 +58,12 @@ function onHospitalIdChanged(event: any) {
               @statsTypeChanged="onStatsTypeChanged($event)"/>
         </n-flex>
         <n-divider/>
-        <LineChart
-            :hospital-id="hospitalId"
-            :stats-type="statsType"/>
+        <h2 v-if="hospitalName">Statystyki porodów w {{hospitalName}}</h2>
+        <figure>
+          <LineChart
+              :hospital-id="hospitalId"
+              :stats-type="statsType"/>
+        </figure>
         <n-ellipsis style="margin-top: 10px">
           *Dane pochodzą z portalu <a
             href="https://ezdrowie.gov.pl/portal/home/badania-i-dane/zdrowe-dane/monitorowanie/porody-opieka-okoloporodowa">https://ezdrowie.gov.pl</a><br/>

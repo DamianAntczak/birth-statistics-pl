@@ -3,6 +3,7 @@ import './style.css'
 import naive from "naive-ui";
 import App from './App.vue'
 import {createRouter, createWebHashHistory} from "vue-router";
+import { createHead } from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
 
 const routes = [
@@ -32,4 +33,5 @@ const router = createRouter({
 const app = createApp(App);
 app.use(naive);
 app.use(router);
+app.use(createHead())
 app.mount('#app');
