@@ -8,7 +8,7 @@ let dynamicRoutes: string[] = [];
 hospitals.forEach((hospital) => {
     Object.values(StatsType).forEach(type => {
         dynamicRoutes.push(
-            '/birth-statistics-pl/#/hospital/' + hospital.value + '/statsType/' + type);
+            '/birth-statistics-pl/#/hospital/' + hospital.id + '/statsType/' + type);
     })
 })
 

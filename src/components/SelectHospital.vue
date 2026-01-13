@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import {ref, watch} from "vue";
+import {h, ref, type VNodeChild, watch} from "vue";
 import {useRoute, useRouter} from "vue-router";
 import hospitals from '../assets/hospitals.json';
+import {NIcon, type SelectOption} from "naive-ui";
+import {Hospital} from "healthicons-vue";
 
 
 const router = useRouter();
@@ -18,7 +20,7 @@ const emit = defineEmits({hospitalChanged:
 )
 
 function hospitalIdChanged(id: string) {
-  const hospitalName = Object.values(hospitals).find(hospital => hospital.value === id)?.label;
+  const hospitalName = Object.values(hospitals).find(hospital => hospital.id === id)?.name;
   emit('hospitalChanged', {hospitalId: id, hospitalName: hospitalName})
 }
 
@@ -37,13 +39,42 @@ watch(() => route.params.hospitalId, (newValue) => {
   }
 }, { immediate: true });
 
+function renderLabel(option: SelectOption): VNodeChild {
+  return [
+    h(
+        NIcon,
+        {
+          style: {
+            verticalAlign: '-0.15em',
+            marginRight: '4px'
+          }
+        },
+        {
+          default: () => h(Hospital)
+        }
+    ),
+    option.name as string,
+    ' | ',
+    option.city as string
+  ]
+}
+
+function filter(pattern: string, option: any) {
+  return  option?.name.toLowerCase().includes(pattern.toLowerCase()) ||
+      option?.city.toLowerCase().includes(pattern.toLowerCase())
+}
+
 </script>
 
 <template>
   <n-form-item label="Szpital" label-placement="left" style="width: 100%">
     <n-select name="hospitals" id="hospitals"
               :options="hospitals"
+              filterable
               placeholder="Wybierz szpital"
+              :render-label="renderLabel"
+              :filter="filter"
+              value-field="id"
               v-model:value="hospitalId"
               @update:value="hospitalIdChanged"
     />

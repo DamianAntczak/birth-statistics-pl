@@ -1,146 +1,145 @@
-[
-  {
-    "value": "150000031",
-    "label": "Szpital Specjalistyczny w Pile im. Stanisława Staszica"
-  },
-  {
-    "value": "150003539",
-    "label": "SPZOZ w Wolsztynie"
-  },
-  {
-    "value": "150003546",
-    "label": "Szpital Powiatowy Im. Prof. Romana Drewsa"
-  },
-  {
-    "value": "150003556",
-    "label": "Wojewódzki Szpital Wielospecjalistyczny Im. Dr. Jana Jonstona w Lesznie"
-  },
-  {
-    "value": "150003557",
-    "label": "SPZOZ w Kępnie"
-  },
-  {
-    "value": "150003180",
-    "label": "Specjalistyczny Zespół Opieki Zdrowotnej Nad Matką i Dzieckiem w Poznaniu"
-  },
-  {
-    "value": "150000006",
-    "label": "Szpital Powiatowy im. Jana Pawła II w Trzciance"
-  },
-  {
-    "value": "150000016",
-    "label": "SPZOZ Grodzisk Wielkopolski"
-  },
-  {
-    "value": "150000013",
-    "label": "SPZOZ w Słupcy"
-  },
-  {
-    "value": "150000001",
-    "label": "Ginekologiczno-Położniczy Szpital Kliniczny Uniwersytetu Medycznego im. Karola Marcinkowskiego w Poznaniu"
-  },
-  {
-    "value": "150003571",
-    "label": "SPZOZ w Krotoszynie"
-  },
-  {
-    "value": "150000002",
-    "label": "Zespół Zakładów Opieki Zdrowotnej w Czarnkowie"
-  },
-  {
-    "value": "150001592",
-    "label": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Kościanie"
-  },
-  {
-    "value": "150000072",
-    "label": "Szpital Miejski im. Franciszka Raszei"
-  },
-  {
-    "value": "150000007",
-    "label": "SPZOZ w Obornikach"
-  },
-  {
-    "value": "150006180",
-    "label": "Wojewódzki Szpital Zespolony im. Ludwika Perzyny w Kaliszu"
-  },
-  {
-    "value": "150003530",
-    "label": "Szpital Średzki Serca Jezusowego sp. z o.o."
-  },
-  {
-    "value": "150000019",
-    "label": "SPZOZ Imienia Doktora Kazimierza Hołogi"
-  },
-  {
-    "value": "150003604",
-    "label": "SPZOZ w Szamotułach"
-  },
-  {
-    "value": "150001425",
-    "label": "SPZOZ w Międzychodzie"
-  },
-  {
-    "value": "150000024",
-    "label": "Ostrzeszowskie Centrum Zdrowia sp. z o.o."
-  },
-  {
-    "value": "150000032",
-    "label": "Wojewódzki Szpital Zespolony im. Dr Romana Ostrzyckiego w Koninie"
-  },
-  {
-    "value": "150000038",
-    "label": "Szpital Wojewódzki w Poznaniu"
-  },
-  {
-    "value": "150002160",
-    "label": "SPZOZ w Kole"
-  },
-  {
-    "value": "150000011",
-    "label": "Szpital Powiatowy im. Alfreda Sokołowskiego w Złotowie"
-  },
-  {
-    "value": "150003183",
-    "label": "Zespół Opieki Zdrowotnej w Wągrowcu"
-  },
-  {
-    "value": "150000025",
-    "label": "Szpital Pomnik Chrztu Polski"
-  },
-  {
-    "value": "150000028",
-    "label": "Zespół Zakładów Opieki Zdrowotnej Ostrów Wielkopolski"
-  },
-  {
-    "value": "150001253",
-    "label": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Gostyniu"
-  },
-  {
-    "value": "150000009",
-    "label": "Samodzielny Publiczny Zespół Opieki Zdrowotnej, Turek"
-  },
-  {
-    "value": "150007437",
-    "label": "Szpital Powiatowy we Wrześni sp. z o.o."
-  },
-  {
-    "value": "150007443",
-    "label": "Pleszewskie Centrum Medyczne w Pleszewie sp. z o.o."
-  },
-  {
-    "value": "150007789",
-    "label": "Szpital Powiatowy w Rawiczu sp. z o.o."
-  },
-  {
-    "value": "150008350; 150000029",
-    "label": "Szpital Powiatowy w Jarocinie; ZZOZ w Jarocinie w likwidacji"
-  },
-  {
-    "value": "150008893; 150003537",
-    "label": "Szpital Powiatowy im. Tadeusza Malińskiego w Śremie sp. z o.o.; Szpital w  Śremie w likwidacji"
-  },
-  {
-    "value": "150008298; 150000018",
-    "label": "Szpital Powiatowy w Wyrzysku sp. z o.o.; Zespół Opieki Zdrowotnej Wyrzysk w likwidacji"
-  }
-]
+[ {
+  "id" : "150003546",
+  "name" : "Szpital Powiatowy Im. Prof. Romana Drewsa",
+  "city" : "Chodzież"
+}, {
+  "id" : "150000002",
+  "name" : "Zespół Zakładów Opieki Zdrowotnej w Czarnkowie",
+  "city" : "Czarnków"
+}, {
+  "id" : "150000025",
+  "name" : "Szpital Pomnik Chrztu Polski",
+  "city" : "Gniezno"
+}, {
+  "id" : "150001253",
+  "name" : "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Gostyniu",
+  "city" : "Gostyń"
+}, {
+  "id" : "150000016",
+  "name" : "SPZOZ Grodzisk Wielkopolski",
+  "city" : "Grodzisk Wielkopolski"
+}, {
+  "id" : "150008350; 150000029",
+  "name" : "Szpital Powiatowy w Jarocinie; ZZOZ w Jarocinie w likwidacji",
+  "city" : "Jarocin"
+}, {
+  "id" : "150006180",
+  "name" : "Wojewódzki Szpital Zespolony im. Ludwika Perzyny w Kaliszu",
+  "city" : "Kalisz"
+}, {
+  "id" : "150003557",
+  "name" : "SPZOZ w Kępnie",
+  "city" : "Kępno"
+}, {
+  "id" : "150002160",
+  "name" : "SPZOZ w Kole",
+  "city" : "Koło"
+}, {
+  "id" : "150000032",
+  "name" : "Wojewódzki Szpital Zespolony im. Dr Romana Ostrzyckiego w Koninie",
+  "city" : "Konin"
+}, {
+  "id" : "150001592",
+  "name" : "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Kościanie",
+  "city" : "Kościan"
+}, {
+  "id" : "150003571",
+  "name" : "SPZOZ w Krotoszynie",
+  "city" : "Krotoszyn"
+}, {
+  "id" : "150003556",
+  "name" : "Wojewódzki Szpital Wielospecjalistyczny Im. Dr. Jana Jonstona w Lesznie",
+  "city" : "Leszno"
+}, {
+  "id" : "150001425",
+  "name" : "SPZOZ w Międzychodzie",
+  "city" : "Międzychód"
+}, {
+  "id" : "150000019",
+  "name" : "SPZOZ Imienia Doktora Kazimierza Hołogi",
+  "city" : "Nowy Tomyśl"
+}, {
+  "id" : "150000007",
+  "name" : "SPZOZ w Obornikach",
+  "city" : "Oborniki"
+}, {
+  "id" : "150000028",
+  "name" : "Zespół Zakładów Opieki Zdrowotnej Ostrów Wielkopolski",
+  "city" : "Ostrów Wielkopolski"
+}, {
+  "id" : "150000024",
+  "name" : "Ostrzeszowskie Centrum Zdrowia sp. z o.o.",
+  "city" : "Ostrzeszów"
+}, {
+  "id" : "150000031",
+  "name" : "Szpital Specjalistyczny w Pile im. Stanisława Staszica",
+  "city" : "Piła"
+}, {
+  "id" : "150007443",
+  "name" : "Pleszewskie Centrum Medyczne w Pleszewie sp. z o.o.",
+  "city" : "Pleszew"
+}, {
+  "id" : "150003180",
+  "name" : "Specjalistyczny Zespół Opieki Zdrowotnej Nad Matką i Dzieckiem w Poznaniu",
+  "city" : "Poznań"
+}, {
+  "id" : "150000038",
+  "name" : "Szpital Wojewódzki w Poznaniu",
+  "city" : "Poznań"
+}, {
+  "id" : "150000072",
+  "name" : "Szpital Miejski im. Franciszka Raszei",
+  "city" : "Poznań"
+}, {
+  "id" : "150000001",
+  "name" : "Ginekologiczno-Położniczy Szpital Kliniczny Uniwersytetu Medycznego im. Karola Marcinkowskiego w Poznaniu",
+  "city" : "Poznań"
+}, {
+  "id" : "150007789",
+  "name" : "Szpital Powiatowy w Rawiczu sp. z o.o.",
+  "city" : "Rawicz"
+}, {
+  "id" : "150000013",
+  "name" : "SPZOZ w Słupcy",
+  "city" : "Słupca"
+}, {
+  "id" : "150008893; 150003537",
+  "name" : "Szpital Powiatowy im. Tadeusza Malińskiego w Śremie sp. z o.o.; Szpital w  Śremie w likwidacji",
+  "city" : "Śrem"
+}, {
+  "id" : "150003530",
+  "name" : "Szpital Średzki Serca Jezusowego sp. z o.o.",
+  "city" : "Środa Wielkopolska"
+}, {
+  "id" : "150003604",
+  "name" : "SPZOZ w Szamotułach",
+  "city" : "Szamotuły"
+}, {
+  "id" : "150000006",
+  "name" : "Szpital Powiatowy im. Jana Pawła II w Trzciance",
+  "city" : "Trzcianka"
+}, {
+  "id" : "150000009",
+  "name" : "Samodzielny Publiczny Zespół Opieki Zdrowotnej, Turek",
+  "city" : "Turek"
+}, {
+  "id" : "150003183",
+  "name" : "Zespół Opieki Zdrowotnej w Wągrowcu",
+  "city" : "Wągrowiec"
+}, {
+  "id" : "150003539",
+  "name" : "SPZOZ w Wolsztynie",
+  "city" : "Wolsztyn"
+}, {
+  "id" : "150007437",
+  "name" : "Szpital Powiatowy we Wrześni sp. z o.o.",
+  "city" : "Września"
+}, {
+  "id" : "150008298; 150000018",
+  "name" : "Szpital Powiatowy w Wyrzysku sp. z o.o.; Zespół Opieki Zdrowotnej Wyrzysk w likwidacji",
+  "city" : "Wyrzysk"
+}, {
+  "id" : "150000011",
+  "name" : "Szpital Powiatowy im. Alfreda Sokołowskiego w Złotowie",
+  "city" : "Złotów"
+} ]
