@@ -8,17 +8,17 @@ let dynamicRoutes: string[] = [];
 hospitals.forEach((hospital) => {
     Object.values(StatsType).forEach(type => {
         dynamicRoutes.push(
-            '/birth-statistics-pl/#/hospital/' + hospital.id + '/statsType/' + type);
+            '/hospital/' + hospital.id + '/statsType/' + type);
     })
 })
 
 export default defineConfig({
-    base: '/birth-statistics-pl',
+    base: '/',
     plugins: [
         vue(),
         Sitemap({
-            hostname: 'https://damianantczak.github.io',
-            dynamicRoutes: ['/birth-statistics-pl', ...dynamicRoutes],
+            hostname: 'https://statystykiporodow.netlify.app/',
+            dynamicRoutes,
             changefreq: 'weekly',
             priority: 0.8
         })

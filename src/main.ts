@@ -2,7 +2,7 @@ import {createApp} from 'vue'
 import './style.css'
 import naive from "naive-ui";
 import App from './App.vue'
-import {createRouter, createWebHashHistory} from "vue-router";
+import {createRouter, createWebHistory} from "vue-router";
 import { createHead } from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
 
@@ -26,7 +26,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHashHistory('/birth-statistics-pl'),
+    history: createWebHistory(),
     routes
 })
 
