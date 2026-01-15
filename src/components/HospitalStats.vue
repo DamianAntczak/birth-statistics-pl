@@ -44,7 +44,7 @@ function onHospitalChanged(payload: any) {
         >
           <template #avatar>
             <n-avatar
-                src="/birth-statistics-pl/favicon.svg"
+                src="/favicon.svg"
             />
           </template>
         </n-page-header>
