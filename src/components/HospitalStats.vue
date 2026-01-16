@@ -17,6 +17,18 @@ useHead({
       name: 'description',
       content: () => 'Interaktywne wykresy statystyk porodowych dla ' + (hospitalName.value ? hospitalName.value: 'szpitali' ) + ' z lat 2010–2025: liczba porodów, odsetek cięć cesarskich, odsetek nacięć krocza oraz odsetek znieczuleń.'
     }
+  ],
+  script: () => [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Hospital',
+        name: hospitalName.value,
+        url: 'https://statystykiporodow.netlify.app/hospital/' + hospitalId.value,
+        medicalSpecialty: 'Obstetrics'
+      })
+    }
   ]
 })
 
