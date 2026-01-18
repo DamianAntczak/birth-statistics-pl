@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://damianantczak.github.io/sitemap.xml
+Sitemap: https://statystykiporodow.netlify.app/sitemap.xml
