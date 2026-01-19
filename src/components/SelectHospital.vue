@@ -16,12 +16,12 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits({hospitalChanged:
-      (_payload: {hospitalId: string, hospitalName?: string}) => true}
+      (_payload: {hospitalId: string, hospital?: any}) => true}
 )
 
 function hospitalIdChanged(id: string) {
-  const hospitalName = Object.values(hospitals).find(hospital => hospital.id === id)?.name;
-  emit('hospitalChanged', {hospitalId: id, hospitalName: hospitalName})
+  const hospital = Object.values(hospitals).find(hospital => hospital.id === id);
+  emit('hospitalChanged', {hospitalId: id, hospital: hospital})
 }
 
 watch(hospitalId, (_newValue) => {

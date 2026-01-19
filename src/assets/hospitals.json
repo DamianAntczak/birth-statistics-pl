@@ -1,145 +1,217 @@
 [ {
   "id" : "150003546",
   "name" : "Szpital Powiatowy Im. Prof. Romana Drewsa",
-  "city" : "Chodzież"
+  "city" : "Chodzież",
+  "latitude" : 52.987833,
+  "longitude" : 16.914807
 }, {
   "id" : "150000002",
   "name" : "Zespół Zakładów Opieki Zdrowotnej w Czarnkowie",
-  "city" : "Czarnków"
+  "city" : "Czarnków",
+  "latitude" : 52.897612,
+  "longitude" : 16.5571678
 }, {
   "id" : "150000025",
   "name" : "Szpital Pomnik Chrztu Polski",
-  "city" : "Gniezno"
+  "city" : "Gniezno",
+  "latitude" : 52.5363658,
+  "longitude" : 17.6017754
 }, {
   "id" : "150001253",
   "name" : "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Gostyniu",
-  "city" : "Gostyń"
+  "city" : "Gostyń",
+  "latitude" : 51.8827399,
+  "longitude" : 17.0108213
 }, {
   "id" : "150000016",
   "name" : "SPZOZ Grodzisk Wielkopolski",
-  "city" : "Grodzisk Wielkopolski"
+  "city" : "Grodzisk Wielkopolski",
+  "latitude" : 52.2284,
+  "longitude" : 16.36657
 }, {
-  "id" : "150008350; 150000029",
+  "id" : "150008350-150000029",
   "name" : "Szpital Powiatowy w Jarocinie; ZZOZ w Jarocinie w likwidacji",
-  "city" : "Jarocin"
+  "city" : "Jarocin",
+  "latitude" : 51.9694317,
+  "longitude" : 17.5046366
 }, {
   "id" : "150006180",
   "name" : "Wojewódzki Szpital Zespolony im. Ludwika Perzyny w Kaliszu",
-  "city" : "Kalisz"
+  "city" : "Kalisz",
+  "latitude" : 51.7696146,
+  "longitude" : 18.101671
 }, {
   "id" : "150003557",
   "name" : "SPZOZ w Kępnie",
-  "city" : "Kępno"
+  "city" : "Kępno",
+  "latitude" : 51.2767727,
+  "longitude" : 17.9837786
 }, {
   "id" : "150002160",
   "name" : "SPZOZ w Kole",
-  "city" : "Koło"
+  "city" : "Koło",
+  "latitude" : 52.1849131,
+  "longitude" : 18.6188722
 }, {
   "id" : "150000032",
   "name" : "Wojewódzki Szpital Zespolony im. Dr Romana Ostrzyckiego w Koninie",
-  "city" : "Konin"
+  "city" : "Konin",
+  "latitude" : 52.2270351,
+  "longitude" : 18.2655682
 }, {
   "id" : "150001592",
   "name" : "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Kościanie",
-  "city" : "Kościan"
+  "city" : "Kościan",
+  "latitude" : 52.084779,
+  "longitude" : 16.6473539
 }, {
   "id" : "150003571",
   "name" : "SPZOZ w Krotoszynie",
-  "city" : "Krotoszyn"
+  "city" : "Krotoszyn",
+  "latitude" : 51.6726614,
+  "longitude" : 17.4326468
 }, {
   "id" : "150003556",
   "name" : "Wojewódzki Szpital Wielospecjalistyczny Im. Dr. Jana Jonstona w Lesznie",
-  "city" : "Leszno"
+  "city" : "Leszno",
+  "latitude" : 51.8392477,
+  "longitude" : 16.6069602
 }, {
   "id" : "150001425",
   "name" : "SPZOZ w Międzychodzie",
-  "city" : "Międzychód"
+  "city" : "Międzychód",
+  "latitude" : 52.5994502,
+  "longitude" : 15.889771
 }, {
   "id" : "150000019",
   "name" : "SPZOZ Imienia Doktora Kazimierza Hołogi",
-  "city" : "Nowy Tomyśl"
+  "city" : "Nowy Tomyśl",
+  "latitude" : 52.3153504,
+  "longitude" : 16.1413949
 }, {
   "id" : "150000007",
   "name" : "SPZOZ w Obornikach",
-  "city" : "Oborniki"
+  "city" : "Oborniki",
+  "latitude" : 52.6533218,
+  "longitude" : 16.8162465
 }, {
   "id" : "150000028",
   "name" : "Zespół Zakładów Opieki Zdrowotnej Ostrów Wielkopolski",
-  "city" : "Ostrów Wielkopolski"
+  "city" : "Ostrów Wielkopolski",
+  "latitude" : 51.6551876,
+  "longitude" : 17.8259427
 }, {
   "id" : "150000024",
   "name" : "Ostrzeszowskie Centrum Zdrowia sp. z o.o.",
-  "city" : "Ostrzeszów"
+  "city" : "Ostrzeszów",
+  "latitude" : 51.425634,
+  "longitude" : 17.9259962
 }, {
   "id" : "150000031",
   "name" : "Szpital Specjalistyczny w Pile im. Stanisława Staszica",
-  "city" : "Piła"
+  "city" : "Piła",
+  "latitude" : 53.1218185,
+  "longitude" : 16.716855
 }, {
   "id" : "150007443",
   "name" : "Pleszewskie Centrum Medyczne w Pleszewie sp. z o.o.",
-  "city" : "Pleszew"
+  "city" : "Pleszew",
+  "latitude" : 51.8977707,
+  "longitude" : 17.7649302
 }, {
   "id" : "150003180",
   "name" : "Specjalistyczny Zespół Opieki Zdrowotnej Nad Matką i Dzieckiem w Poznaniu",
-  "city" : "Poznań"
+  "city" : "Poznań",
+  "latitude" : 52.395903,
+  "longitude" : 16.8947779
 }, {
   "id" : "150000038",
   "name" : "Szpital Wojewódzki w Poznaniu",
-  "city" : "Poznań"
+  "city" : "Poznań",
+  "latitude" : 52.4394574,
+  "longitude" : 16.9065214
 }, {
   "id" : "150000072",
   "name" : "Szpital Miejski im. Franciszka Raszei",
-  "city" : "Poznań"
+  "city" : "Poznań",
+  "latitude" : 52.4134725,
+  "longitude" : 16.9128853
 }, {
   "id" : "150000001",
   "name" : "Ginekologiczno-Położniczy Szpital Kliniczny Uniwersytetu Medycznego im. Karola Marcinkowskiego w Poznaniu",
-  "city" : "Poznań"
+  "city" : "Poznań",
+  "latitude" : 52.4093922,
+  "longitude" : 16.8955726
 }, {
   "id" : "150007789",
   "name" : "Szpital Powiatowy w Rawiczu sp. z o.o.",
-  "city" : "Rawicz"
+  "city" : "Rawicz",
+  "latitude" : 51.6145513,
+  "longitude" : 16.8427724
 }, {
   "id" : "150000013",
   "name" : "SPZOZ w Słupcy",
-  "city" : "Słupca"
+  "city" : "Słupca",
+  "latitude" : 52.2911452,
+  "longitude" : 17.8733407
 }, {
-  "id" : "150008893; 150003537",
+  "id" : "150008893-150003537",
   "name" : "Szpital Powiatowy im. Tadeusza Malińskiego w Śremie sp. z o.o.; Szpital w  Śremie w likwidacji",
-  "city" : "Śrem"
+  "city" : "Śrem",
+  "latitude" : 52.089008,
+  "longitude" : 17.0069131
 }, {
   "id" : "150003530",
   "name" : "Szpital Średzki Serca Jezusowego sp. z o.o.",
-  "city" : "Środa Wielkopolska"
+  "city" : "Środa Wielkopolska",
+  "latitude" : 52.227462,
+  "longitude" : 17.2849775
 }, {
   "id" : "150003604",
   "name" : "SPZOZ w Szamotułach",
-  "city" : "Szamotuły"
+  "city" : "Szamotuły",
+  "latitude" : 52.6106658,
+  "longitude" : 16.5815048
 }, {
   "id" : "150000006",
   "name" : "Szpital Powiatowy im. Jana Pawła II w Trzciance",
-  "city" : "Trzcianka"
+  "city" : "Trzcianka",
+  "latitude" : 53.0396379,
+  "longitude" : 16.4642394
 }, {
   "id" : "150000009",
   "name" : "Samodzielny Publiczny Zespół Opieki Zdrowotnej, Turek",
-  "city" : "Turek"
+  "city" : "Turek",
+  "latitude" : 52.0102569,
+  "longitude" : 18.4908247
 }, {
   "id" : "150003183",
   "name" : "Zespół Opieki Zdrowotnej w Wągrowcu",
-  "city" : "Wągrowiec"
+  "city" : "Wągrowiec",
+  "latitude" : 52.8178856,
+  "longitude" : 17.204699
 }, {
   "id" : "150003539",
   "name" : "SPZOZ w Wolsztynie",
-  "city" : "Wolsztyn"
+  "city" : "Wolsztyn",
+  "latitude" : 52.1166044,
+  "longitude" : 16.1179082
 }, {
   "id" : "150007437",
   "name" : "Szpital Powiatowy we Wrześni sp. z o.o.",
-  "city" : "Września"
+  "city" : "Września",
+  "latitude" : 52.3252059,
+  "longitude" : 17.573187
 }, {
-  "id" : "150008298; 150000018",
+  "id" : "150008298-150000018",
   "name" : "Szpital Powiatowy w Wyrzysku sp. z o.o.; Zespół Opieki Zdrowotnej Wyrzysk w likwidacji",
-  "city" : "Wyrzysk"
+  "city" : "Wyrzysk",
+  "latitude" : 53.1490345,
+  "longitude" : 17.2720573
 }, {
   "id" : "150000011",
   "name" : "Szpital Powiatowy im. Alfreda Sokołowskiego w Złotowie",
-  "city" : "Złotów"
+  "city" : "Złotów",
+  "latitude" : 53.3554552,
+  "longitude" : 17.0449343
 } ]

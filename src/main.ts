@@ -6,6 +6,8 @@ import {createRouter, createWebHistory} from "vue-router";
 import { createHead } from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
 
+import 'leaflet/dist/leaflet.css'
+
 const routes = [
 
     {
