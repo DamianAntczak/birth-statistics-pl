@@ -7,7 +7,7 @@ const map = ref<any>(undefined);
 const zoom = ref(14);
 
 defineProps<{
-  latitude: number,
+  latitude: number
   longitude: number
 }>();
 
@@ -15,14 +15,15 @@ defineProps<{
 
 <template>
   <div style="height:600px;" v-if="longitude && longitude">
-    <LMap ref="map" v-model:zoom="zoom" :center="[latitude, longitude]">
-      <LTileLayer
+    <l-map ref="map" v-model:zoom="zoom" :center="[latitude, longitude]"
+           :use-global-leaflet="false">
+      <l-tile-layer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           layer-type="base"
           name="OpenStreetMap"
-      ></LTileLayer>
-      <LMarker :lat-lng="[latitude, longitude]"/>
-    </LMap>
+      ></l-tile-layer>
+      <l-marker :lat-lng="[latitude, longitude]"/>
+    </l-map>
   </div>
 </template>
 

@@ -3,9 +3,9 @@ import './style.css'
 import naive from "naive-ui";
 import App from './App.vue'
 import {createRouter, createWebHistory} from "vue-router";
-import { createHead } from '@unhead/vue/client'
+import {createHead} from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
-
+import HospitalList from "./components/HospitalList.vue";
 import 'leaflet/dist/leaflet.css'
 
 const routes = [
@@ -14,6 +14,11 @@ const routes = [
         path: '/',
         name: 'StatsRoot',
         component: HospitalStats
+    },
+    {
+        path: '/hospital',
+        name: 'HospitalList',
+        component: HospitalList
     },
     {
         path: '/hospital/:hospitalId',

@@ -18,7 +18,7 @@ export default defineConfig({
         vue(),
         Sitemap({
             hostname: 'https://statystykiporodow.netlify.app/',
-            dynamicRoutes,
+            dynamicRoutes: ['/hospital', ...dynamicRoutes],
             changefreq: 'weekly',
             priority: 0.8
         })
