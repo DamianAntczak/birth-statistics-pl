@@ -29,6 +29,8 @@ import {HealthiconsProvider} from "healthicons-vue";
               <n-divider/>
               <div style="text-align: center">
                 <n-button text tag="a" href="/hospital">Lista oddziałów położniczych w Wielkopolsce</n-button>
+                |
+                <n-button text tag="a" href="/map">Mapa oddziałów położniczych w Wielkopolsce</n-button>
               </div>
             </footer>
           </div>

@@ -75,7 +75,9 @@ watch(
 </script>
 
 <template>
-  <Line :data="chartData" :options="options" />
+  <figure v-if="statsType">
+    <Line :data="chartData" :options="options" />
+  </figure>
 </template>
 
 <style scoped>

@@ -1,28 +1,59 @@
 <script setup lang="ts">
-import {ref} from "vue";
-import {LMap, LMarker, LTileLayer} from "@vue-leaflet/vue-leaflet";
+import {LMap, LTileLayer} from "@vue-leaflet/vue-leaflet";
+import {type PropType, ref} from "vue";
 
-const map = ref<any>(undefined);
+import hospitals from '../assets/hospitals.json'
+import L from 'leaflet'
 
-const zoom = ref(14);
+const mapRef = ref<any>(null);
 
-defineProps<{
-  latitude: number
-  longitude: number
-}>();
+interface Coordinates {
+  latitude: number;
+  longitude: number;
+}
+
+defineProps({
+  center: {
+    type: Object as PropType<Coordinates>,
+    default: () => ({latitude: 52.33333, longitude: 17.23333}),
+    required: false
+  },
+  zoom: {
+    type: Number,
+    default: 7.5
+  }
+});
+
+
+function onMapReady() {
+  const map = mapRef.value.leafletObject
+
+  const cluster = L.markerClusterGroup()
+
+  hospitals.forEach(h => {
+    cluster.addLayer(
+        L.marker([h.latitude, h.longitude])
+            .bindTooltip(h.name)
+            .on('click', () => window.location.href = '/hospital/' + h.id)
+    )
+  })
+
+  map.addLayer(cluster)
+}
 
 </script>
 
 <template>
-  <div style="height:600px;" v-if="longitude && longitude">
-    <l-map ref="map" v-model:zoom="zoom" :center="[latitude, longitude]"
-           :use-global-leaflet="false">
+  <div style="height:600px;">
+    <l-map ref="mapRef" :zoom="zoom" :center="[center.latitude, center.longitude]"
+           :maxZoom="19"
+           :use-global-leaflet="true"
+           @ready="onMapReady">
       <l-tile-layer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           layer-type="base"
           name="OpenStreetMap"
-      ></l-tile-layer>
-      <l-marker :lat-lng="[latitude, longitude]"/>
+      />
     </l-map>
   </div>
 </template>

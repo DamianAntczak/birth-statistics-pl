@@ -6,7 +6,13 @@ import {createRouter, createWebHistory} from "vue-router";
 import {createHead} from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
 import HospitalList from "./components/HospitalList.vue";
+import Map from "./components/Map.vue";
+
+import 'leaflet.markercluster'
+
 import 'leaflet/dist/leaflet.css'
+import 'leaflet.markercluster/dist/MarkerCluster.css'
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css'
 
 const routes = [
 
@@ -14,6 +20,11 @@ const routes = [
         path: '/',
         name: 'StatsRoot',
         component: HospitalStats
+    },
+    {
+        path: '/map',
+        name: 'AllMap',
+        component: Map
     },
     {
         path: '/hospital',

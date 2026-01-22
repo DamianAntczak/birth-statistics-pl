@@ -10,8 +10,7 @@ import Map from "./Map.vue";
 const statsType = ref()
 const hospitalId = ref()
 const hospitalName = ref()
-const latitude = ref();
-const longitude = ref();
+const center = ref();
 
 useHead({
   title: () => hospitalName.value ? 'Statystyki porodów 2010-2025 | ' + hospitalName.value : 'Statystyki porodów w Polsce 2010–2025 | Szpitale',
@@ -42,8 +41,7 @@ function onStatsTypeChanged(event: any) {
 function onHospitalChanged(payload: any) {
   hospitalId.value = payload.hospitalId;
   hospitalName.value = payload.hospital.hospitalName;
-  latitude.value = payload.hospital.latitude;
-  longitude.value = payload.hospital.longitude;
+  center.value = {latitude: payload.hospital.latitude, longitude: payload.hospital.longitude};
 }
 
 
@@ -61,18 +59,16 @@ function onHospitalChanged(payload: any) {
     </n-flex>
     <n-divider/>
     <h2 v-if="hospitalName">Statystyki porodów w {{ hospitalName }}</h2>
-    <figure>
-      <LineChart
-          :hospital-id="hospitalId"
-          :stats-type="statsType"/>
-    </figure>
+    <LineChart
+        :hospital-id="hospitalId"
+        :stats-type="statsType"/>
     <n-ellipsis style="margin-top: 10px">
       *Dane pochodzą z portalu <a
         href="https://ezdrowie.gov.pl/portal/home/badania-i-dane/zdrowe-dane/monitorowanie/porody-opieka-okoloporodowa">https://ezdrowie.gov.pl</a><br/>
       W przypadku roku 2025 dane podane są dla I półrocza
     </n-ellipsis>
     <n-divider/>
-    <Map :latitude="latitude" :longitude="longitude"/>
+    <Map :center="center" v-if="center" :zoom="14"/>
   </div>
 </template>
 
