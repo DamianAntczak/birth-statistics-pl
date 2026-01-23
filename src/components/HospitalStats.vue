@@ -39,8 +39,9 @@ function onStatsTypeChanged(event: any) {
 }
 
 function onHospitalChanged(payload: any) {
-  hospitalId.value = payload.hospitalId;
-  hospitalName.value = payload.hospital.hospitalName;
+  hospitalId.value = payload.hospitalId
+  console.log(payload)
+  hospitalName.value = payload.hospital.name;
   center.value = {latitude: payload.hospital.latitude, longitude: payload.hospital.longitude};
 }
 
@@ -58,7 +59,8 @@ function onHospitalChanged(payload: any) {
           @statsTypeChanged="onStatsTypeChanged($event)"/>
     </n-flex>
     <n-divider/>
-    <h2 v-if="hospitalName">Statystyki porodów w {{ hospitalName }}</h2>
+    <h1 v-if="hospitalName">Statystyki porodów w {{ hospitalName }}</h1>
+    <h1 v-else>Statystyki porodów w Polsce 2010-2025</h1>
     <LineChart
         :hospital-id="hospitalId"
         :stats-type="statsType"/>
