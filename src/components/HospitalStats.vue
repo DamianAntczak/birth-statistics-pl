@@ -27,7 +27,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'Hospital',
         name: hospitalName.value,
-        url: 'https://statystykiporodow.netlify.app/hospital/' + hospitalId.value,
+        url: 'https://statystykiporodow.pl/szpital/' + hospitalId.value,
         medicalSpecialty: 'Obstetrics'
       })
     }

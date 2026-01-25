@@ -1,9 +1,9 @@
 
 export const StatsType = {
-    Births: 'births',
-    Cesareans: 'cesarean',
-    Episiotomies: 'episiotomy',
-    Anesthesias: 'anesthesia'
+    Births: 'porody',
+    Cesareans: 'cesarskie-ciecia',
+    Episiotomies: 'naciecia-krocza',
+    Anesthesias: 'znieczulenia'
 } as const;
 
 export type StatsType = typeof StatsType[keyof typeof StatsType];

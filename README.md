@@ -1,6 +1,6 @@
 # Statystyki porodów dla wybranego szpitala
 
-[Sprawdź](https://statystykiporodow.netlify.app/)
+[Sprawdź](https://statystykiporodow.pl/)
 
 >Aktualnie dla porodówek w Wielkopolsce
 

@@ -22,22 +22,22 @@ const routes = [
         component: HospitalStats
     },
     {
-        path: '/map',
+        path: '/mapa',
         name: 'AllMap',
         component: Map
     },
     {
-        path: '/hospital',
+        path: '/szpital',
         name: 'HospitalList',
         component: HospitalList
     },
     {
-        path: '/hospital/:hospitalId',
+        path: '/szpital/:hospitalId',
         name: 'StatsHospital',
         component: HospitalStats
     },
     {
-        path: '/hospital/:hospitalId/statsType/:statsType',
+        path: '/szpital/:hospitalId/:statsType',
         name: 'StatsDetail',
         component: HospitalStats
     }

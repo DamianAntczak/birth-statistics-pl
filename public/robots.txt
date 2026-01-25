@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://statystykiporodow.netlify.app/sitemap.xml
+Sitemap: https://statystykiporodow.pl/sitemap.xml
