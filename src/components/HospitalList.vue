@@ -8,6 +8,8 @@ import {StatsType} from "../common/StatsType.ts";
 import {h, ref} from "vue";
 import {NButton} from "naive-ui";
 import {useRouter} from "vue-router";
+import DataView from 'primevue/dataview';
+import Button from 'primevue/button';
 
 const data: { graphDataMap: GraphData } = jsonData;
 const router = useRouter();
@@ -101,6 +103,23 @@ const pagination = ref({
 
 <template>
   <h2>Lista oddziałów położniczych w Wielkopolsce:</h2>
+  <DataView :value="dataTable" paginator :rows="10" >
+    <template #list="slotProps">
+      <div class="flex flex-col">
+        <div v-for="(item, index) in slotProps.items" :key="index">
+          {{item.name}}
+          {{item.city}}
+          {{item.births2010}}
+          {{item.births2024}}
+          {{item.cesareans2010}}
+          {{item.cesareans2025}}
+          {{item.episiotomies2010}}
+          {{item.episiotomies2025}}
+          <Button></Button>
+        </div>
+      </div>
+    </template>
+  </DataView>
   <n-data-table
       :data="dataTable"
       :columns="columns"

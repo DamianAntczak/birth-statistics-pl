@@ -1,11 +1,30 @@
 <script setup lang="ts">
-import {HealthiconsProvider} from "healthicons-vue";
+import {HealthiconsProvider, Temple} from "healthicons-vue";
+import type {MenuItem} from "primevue/menuitem";
+import {ref} from "vue";
+
+
+const menuItems = ref<MenuItem | undefined>([
+  {
+    label: 'Statystki porodów',
+    icon: 'pi pi-home',
+    url: '/'
+  }
+]);
+
 </script>
 
 <template>
   <HealthiconsProvider
-      :icon-props="{}"
+      :icon-props="{'height': '1.75em'}"
   >
+    <nav class="card">
+      <menubar :model="menuItems" >
+        <template #start>
+          <Image src="/favicon.svg" alt="Logo statystykiporodow.pl" width="50" />
+        </template>
+      </menubar>
+    </nav>
     <n-config-provider>
       <n-grid cols="10" item-responsive responsive="screen">
         <n-grid-item span="0 m:1">

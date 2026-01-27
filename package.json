@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@primeuix/themes": "^2.0.3",
     "@unhead/vue": "^2.1.2",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
     "chart.js": "^4.5.1",
@@ -17,6 +18,8 @@
     "healthicons-vue": "^3.5.0",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.5.4",
     "vue": "^3.5.13",
     "vue-chartjs": "^5.3.3",
     "vue-router": "^4.6.4"
