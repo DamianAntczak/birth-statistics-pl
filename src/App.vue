@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {HealthiconsProvider, Temple} from "healthicons-vue";
+import {HealthiconsProvider} from "healthicons-vue";
 import type {MenuItem} from "primevue/menuitem";
 import {ref} from "vue";
 
@@ -19,9 +19,9 @@ const menuItems = ref<MenuItem | undefined>([
       :icon-props="{'height': '1.75em'}"
   >
     <nav class="card">
-      <menubar :model="menuItems" >
+      <menubar :model="menuItems">
         <template #start>
-          <Image src="/favicon.svg" alt="Logo statystykiporodow.pl" width="50" />
+          <Image src="/favicon.svg" alt="Logo statystykiporodow.pl" width="50"/>
         </template>
       </menubar>
     </nav>
@@ -47,9 +47,15 @@ const menuItems = ref<MenuItem | undefined>([
             <footer>
               <n-divider/>
               <div style="text-align: center">
-                <n-button text tag="a" href="/szpital">Lista oddziałów położniczych w Wielkopolsce</n-button>
+                <Button label="Primary" variant="text">
+                  <i class="pi pi-list"/>
+                  <RouterLink to="/szpital">Lista oddziałów położniczych w Wielkopolsce</RouterLink>
+                </Button>
                 |
-                <n-button text tag="a" href="/mapa">Mapa oddziałów położniczych w Wielkopolsce</n-button>
+                <Button label="Primary" variant="text">
+                  <i class="pi pi-map"/>
+                  <RouterLink to="/mapa">Mapa oddziałów położniczych w Wielkopolsce</RouterLink>
+                </Button>
               </div>
             </footer>
           </div>
@@ -62,7 +68,5 @@ const menuItems = ref<MenuItem | undefined>([
 </template>
 
 <style scoped>
-div.content-container {
-  margin: 30px 10px;
-}
+
 </style>
