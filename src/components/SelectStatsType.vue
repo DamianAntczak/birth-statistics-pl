@@ -3,22 +3,13 @@ import {ref, watch} from "vue";
 import {useRoute, useRouter} from "vue-router";
 import {StatsType} from "../common/StatsType.ts";
 import {Baby0203m, SurgicalSterilization, Syringe, VascularSurgeryOutline} from "healthicons-vue";
-import {NIcon} from "naive-ui";
 import SelectButton from 'primevue/selectbutton';
 
 
 const router = useRouter();
 const route = useRoute();
 
-
-const value = ref(null)
 const statisticType = ref('');
-const options = ref([
-  {icon: 'pi pi-align-left', value: 'Left'},
-  {icon: 'pi pi-align-right', value: 'Right'},
-  {icon: 'pi pi-align-center', value: 'Center'},
-  {icon: 'pi pi-align-justify', value: 'Justify'}
-]);
 
 const types = [
       {
@@ -79,4 +70,13 @@ function statisticTypeChanged(value: any) {
 </template>
 
 <style scoped>
+@media (max-width: 640px) {
+  .p-selectbutton {
+    flex-direction: column;
+  }
+
+  .p-selectbutton .p-button {
+    width: 100%;
+  }
+}
 </style>

@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
+@layer base {
+    h1 {
+        font-size: var(--text-2xl);
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 400;
+    }
+}

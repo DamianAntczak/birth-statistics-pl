@@ -8,7 +8,7 @@ import {PrimeVueResolver} from '@primevue/auto-import-resolver';
 let dynamicRoutes: string[] = [];
 hospitals.forEach((hospital) => {
         dynamicRoutes.push(
-            '/szpital/' + hospital.id);
+            '/szpitale/' + hospital.id);
 })
 
 export default defineConfig({
@@ -22,7 +22,7 @@ export default defineConfig({
         }),
         Sitemap({
             hostname: 'https://statystykiporodow.pl/',
-            dynamicRoutes: ['/szpital', '/mapa', ...dynamicRoutes],
+            dynamicRoutes: ['/szpitale', '/mapa', ...dynamicRoutes],
             changefreq: 'weekly',
             priority: 0.8
         })

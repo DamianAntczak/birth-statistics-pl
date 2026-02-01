@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import {computed, h, ref, type VNodeChild, watch} from "vue";
+import {computed, ref, watch} from "vue";
 import {useRoute, useRouter} from "vue-router";
 import hospitals from '../assets/hospitals.json';
-import {Hospital} from "healthicons-vue";
 import Select from 'primevue/select';
 
 
@@ -56,18 +55,18 @@ watch(() => route.params.hospitalId, (newValue) => {
 </script>
 
 <template>
-  <div class="card flex flex-col items-center gap-4">
+  <div class="card flex flex-col items-center gap-4 m-4">
     <Select v-model="selectedHospitalId" :options="hospitals" size="small" id="hospitals"
       placeholder="Wybierz szpital" filter :filter-fields="['name','city']" fluid>
       <template #value="slotProps">
         <div v-if="slotProps.value" class="flex items-center">
-          <div><Hospital height="18px" style="vertical-align: -0.25em"/> {{slotProps.value?.name}} | {{slotProps.value?.city}}</div>
+          <span><i class="pi pi-building"/> {{slotProps.value?.name}} | {{slotProps.value?.city}}</span>
         </div>
         <span v-else>{{slotProps.placeholder}}</span>
       </template>
       <template #option="slotProps">
         <div class="flex items-center">
-          <div><Hospital height="18px" style="vertical-align: -0.25em"/> {{slotProps.option.name}} | {{slotProps.option.city}}</div>
+          <div><i class="pi pi-building"/> {{slotProps.option.name}} | {{slotProps.option.city}}</div>
         </div>
       </template>
     </Select>

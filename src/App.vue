@@ -1,72 +1,55 @@
 <script setup lang="ts">
-import {HealthiconsProvider} from "healthicons-vue";
-import type {MenuItem} from "primevue/menuitem";
-import {ref} from "vue";
+import { HealthiconsProvider } from "healthicons-vue";
+import type { MenuItem } from "primevue/menuitem";
+import { ref } from "vue";
 
 
-const menuItems = ref<MenuItem | undefined>([
+const menuItems = ref<MenuItem[] | undefined>([
   {
     label: 'Statystki porodów',
-    icon: 'pi pi-home',
+    icon: 'pi pi-chart-line',
     url: '/'
+  },
+  {
+    label: 'Lista szpitali',
+    icon: 'pi pi-list',
+    url: '/szpitale'
+  },
+  {
+    label: 'Mapa porodówek',
+    icon: 'pi pi-map',
+    url: '/mapa'
   }
 ]);
 
 </script>
 
 <template>
-  <HealthiconsProvider
-      :icon-props="{'height': '1.75em'}"
-  >
+  <HealthiconsProvider :icon-props="{ 'height': '1.75em' }">
     <nav class="card">
       <menubar :model="menuItems">
         <template #start>
-          <Image src="/favicon.svg" alt="Logo statystykiporodow.pl" width="50"/>
+          <Image src="/favicon.svg" alt="Logo statystykiporodow.pl" width="50" />
         </template>
       </menubar>
     </nav>
-    <n-config-provider>
-      <n-grid cols="10" item-responsive responsive="screen">
-        <n-grid-item span="0 m:1">
-        </n-grid-item>
-        <n-grid-item span="10 m:8">
-          <div class="content-container">
-            <header>
-              <n-page-header title="Statystyki porodów dla szpitali"
-                             subtitle="na podstawie z danych NFZ*"
-              >
-                <n-divider/>
-                <template #avatar>
-                  <n-avatar
-                      src="/favicon.svg"
-                  />
-                </template>
-              </n-page-header>
-            </header>
-            <RouterView/>
-            <footer>
-              <n-divider/>
-              <div style="text-align: center">
-                <Button label="Primary" variant="text">
-                  <i class="pi pi-list"/>
-                  <RouterLink to="/szpital">Lista oddziałów położniczych w Wielkopolsce</RouterLink>
-                </Button>
-                |
-                <Button label="Primary" variant="text">
-                  <i class="pi pi-map"/>
-                  <RouterLink to="/mapa">Mapa oddziałów położniczych w Wielkopolsce</RouterLink>
-                </Button>
-              </div>
-            </footer>
-          </div>
-        </n-grid-item>
-        <n-grid-item span="0 m:1">
-        </n-grid-item>
-      </n-grid>
-    </n-config-provider>
+    <div class="max-w-7xl mx-auto px-*">
+      <RouterView />
+      <footer>
+        <div style="text-align: center">
+          <Button label="Primary" variant="text">
+            <i class="pi pi-list" />
+            <RouterLink to="/szpitale">Lista oddziałów położniczych w Wielkopolsce</RouterLink>
+          </Button>
+          |
+          <Button label="primary" variant="text">
+            <i class="pi pi-map" />
+            <RouterLink to="/mapa">Mapa oddziałów położniczych w Wielkopolsce</RouterLink>
+          </Button>
+        </div>
+      </footer>
+    </div>
   </HealthiconsProvider>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

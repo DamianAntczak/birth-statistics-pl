@@ -34,7 +34,7 @@ function onMapReady() {
     cluster.addLayer(
         L.marker([h.latitude, h.longitude])
             .bindTooltip(h.name)
-            .on('click', () => window.location.href = '/szpital/' + h.id)
+            .on('click', () => window.location.href = '/szpitale/' + h.id)
     )
   })
 

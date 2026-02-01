@@ -1,6 +1,5 @@
 import {createApp} from 'vue'
 import './style.css'
-import naive from "naive-ui";
 import App from './App.vue'
 import PrimeVue from 'primevue/config';
 import {createRouter, createWebHistory} from "vue-router";
@@ -30,17 +29,17 @@ const routes = [
         component: Map
     },
     {
-        path: '/szpital',
+        path: '/szpitale',
         name: 'HospitalList',
         component: HospitalList
     },
     {
-        path: '/szpital/:hospitalId',
+        path: '/szpitale/:hospitalId',
         name: 'StatsHospital',
         component: HospitalStats
     },
     {
-        path: '/szpital/:hospitalId/:statsType',
+        path: '/szpitale/:hospitalId/:statsType',
         name: 'StatsDetail',
         component: HospitalStats
     }
@@ -52,7 +51,6 @@ const router = createRouter({
 })
 
 const app = createApp(App);
-app.use(naive);
 app.use(router);
 app.use(createHead());
 app.use(PrimeVue, {
