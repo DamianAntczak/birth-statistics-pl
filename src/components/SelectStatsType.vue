@@ -3,13 +3,14 @@ import {ref, watch} from "vue";
 import {useRoute, useRouter} from "vue-router";
 import {StatsType} from "../common/StatsType.ts";
 import {Baby0203m, SurgicalSterilization, Syringe, VascularSurgeryOutline} from "healthicons-vue";
-import {NIcon} from "naive-ui";
+import SelectButton from 'primevue/selectbutton';
+
 
 const router = useRouter();
 const route = useRoute();
 
-
 const statisticType = ref('');
+
 const types = [
       {
         value: StatsType.Births,
@@ -46,8 +47,6 @@ watch(() => route.params.statsType, (newValue) => {
 }, {immediate: true});
 
 
-
-
 function statisticTypeChanged(value: any) {
   emit('statsTypeChanged', value)
 }
@@ -55,30 +54,29 @@ function statisticTypeChanged(value: any) {
 </script>
 
 <template>
-  <n-radio-group
-      v-model:value="statisticType"
-      @update:value="statisticTypeChanged">
-    <n-radio-button
-        v-for="type in types"
-        :key="type.value"
-        :value="type.value"
-    >
-      <div>
-        <n-icon size="2em" class="type-icon">
-          <Baby0203m v-if="type.value === StatsType.Births"/>
-          <VascularSurgeryOutline v-else-if="type.value === StatsType.Cesareans"/>
-          <SurgicalSterilization v-else-if="type.value === StatsType.Episiotomies"/>
-          <Syringe v-if="type.value === StatsType.Anesthesias"/>
-        </n-icon>
-        {{ type.label }}
-      </div>
-    </n-radio-button>
-  </n-radio-group>
+  <div class="card flex justify-center">
+    <SelectButton v-model="statisticType" :options="types"
+                  optionLabel="label" option-value="value" size="small">
+      <template #option="slotProps">
+        <Baby0203m v-if="slotProps.option.value === StatsType.Births"/>
+        <VascularSurgeryOutline v-else-if="slotProps.option.value === StatsType.Cesareans"/>
+        <SurgicalSterilization v-else-if="slotProps.option.value === StatsType.Episiotomies"/>
+        <Syringe v-if="slotProps.option.value === StatsType.Anesthesias"/>
+        <span>{{slotProps.option.label}}</span>
+      </template>
+    </SelectButton>
+  </div>
+
 </template>
 
 <style scoped>
-.type-icon {
-  vertical-align: -0.35em;
-  margin-right: 8px;
+@media (max-width: 640px) {
+  .p-selectbutton {
+    flex-direction: column;
+  }
+
+  .p-selectbutton .p-button {
+    width: 100%;
+  }
 }
 </style>

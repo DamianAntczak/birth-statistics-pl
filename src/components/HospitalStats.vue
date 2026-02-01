@@ -27,7 +27,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'Hospital',
         name: hospitalName.value,
-        url: 'https://statystykiporodow.pl/szpital/' + hospitalId.value,
+        url: 'https://statystykiporodow.pl/szpitale/' + hospitalId.value,
         medicalSpecialty: 'Obstetrics'
       })
     }
@@ -54,22 +54,19 @@ function onHospitalChanged(payload: any) {
         @hospitalChanged="onHospitalChanged"
         :stats-type="statsType"
     />
-    <n-flex justify="center">
-      <SelectStatsType
-          @statsTypeChanged="onStatsTypeChanged($event)"/>
-    </n-flex>
-    <n-divider/>
-    <h1 v-if="hospitalName">Statystyki porodów w {{ hospitalName }}</h1>
-    <h1 v-else>Statystyki porodów w Polsce 2010-2025</h1>
+    <SelectStatsType
+        @statsTypeChanged="onStatsTypeChanged($event)"/>
+    <h1 v-if="hospitalName" class="m-2">Statystyki porodów w {{ hospitalName }}</h1>
+    <h1 v-else class="m-2">Statystyki porodów w Polsce 2010-2025</h1>
     <LineChart
         :hospital-id="hospitalId"
         :stats-type="statsType"/>
-    <n-ellipsis style="margin-top: 10px">
-      *Dane pochodzą z portalu <a
+    <Panel header="Źródło danych">
+      Dane pochodzą z portalu <a
         href="https://ezdrowie.gov.pl/portal/home/badania-i-dane/zdrowe-dane/monitorowanie/porody-opieka-okoloporodowa">https://ezdrowie.gov.pl</a><br/>
       W przypadku roku 2025 dane podane są dla I półrocza
-    </n-ellipsis>
-    <n-divider/>
+    </Panel>
+    <Divider/>
     <Map :center="center" v-if="center" :zoom="14"/>
   </div>
 </template>
