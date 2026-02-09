@@ -1,15 +1,15 @@
-import {createApp} from 'vue'
+import { ViteSSG } from 'vite-ssg'
 import './style.css'
 import App from './App.vue'
 import PrimeVue from 'primevue/config';
-import {createRouter, createWebHistory} from "vue-router";
+// import {createRouter, createWebHistory} from "vue-router";
 import {createHead} from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
 import HospitalList from "./components/HospitalList.vue";
 import Map from "./components/Map.vue";
 import Aura from '@primeuix/themes/aura';
+import hospitals from './assets/hospitals.json';
 
-import 'leaflet.markercluster'
 
 import 'leaflet/dist/leaflet.css'
 import 'leaflet.markercluster/dist/MarkerCluster.css'
@@ -47,19 +47,29 @@ const routes = [
     }
 ]
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+// const router = createRouter({
+//     history: createWebHistory(),
+//     routes
+// })
 
-const app = createApp(App);
-app.use(router);
-app.use(createHead());
-app.use(PrimeVue, {
-    theme: {
-        preset: Aura
-    }
-});
-app.component('Menubar', Menubar);
-app.component('Image', Image);
-app.mount('#app');
+export const createApp = ViteSSG(
+  App,
+  { routes },
+  (ctx) => {
+    const head = createHead()
+
+    ctx.app.use(head)
+
+    ctx.head = head
+
+    ctx.app.use(PrimeVue, {
+      theme: {
+        preset: Aura,
+      },
+    })
+
+    ctx.app.component('Menubar', Menubar)
+    ctx.app.component('Image', Image)
+
+  }
+)

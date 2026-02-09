@@ -9,6 +9,8 @@ import SelectButton from 'primevue/selectbutton';
 const router = useRouter();
 const route = useRoute();
 
+const hospitalId = route.params.hospitalId as string;
+
 const statisticType = ref('');
 
 const types = [
@@ -35,7 +37,7 @@ const emit = defineEmits({statsTypeChanged: (_value: string) => true})
 
 
 watch(statisticType, (newValue) => {
-  router.push({name: 'StatsDetail', params: {statsType: newValue}})
+  router.push({name: 'StatsDetail', params: {hospitalId: hospitalId, statsType: newValue}})
   statisticTypeChanged(statisticType.value)
 });
 
