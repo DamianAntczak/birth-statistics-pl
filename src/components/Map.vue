@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import {LMap, LTileLayer} from "@vue-leaflet/vue-leaflet";
-import {type PropType, ref} from "vue";
+import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
+import { type PropType, ref } from "vue";
 
 import hospitals from '../assets/hospitals.json'
-import L from 'leaflet'
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const mapRef = ref<any>(null);
 
 interface Coordinates {
@@ -15,7 +16,7 @@ interface Coordinates {
 defineProps({
   center: {
     type: Object as PropType<Coordinates>,
-    default: () => ({latitude: 52.33333, longitude: 17.23333}),
+    default: () => ({ latitude: 52.33333, longitude: 17.23333 }),
     required: false
   },
   zoom: {
@@ -25,16 +26,24 @@ defineProps({
 });
 
 
-function onMapReady() {
-  const map = mapRef.value.leafletObject
+async function onMapReady() {
+  if (typeof window === 'undefined') return;
 
-  const cluster = L.markerClusterGroup()
+  const L = await import('leaflet');
 
-  hospitals.forEach(h => {
+  window.L = L;
+
+  await import('leaflet.markercluster');
+
+  const map = mapRef.value.leafletObject;
+
+  const cluster = L.markerClusterGroup();
+
+  hospitals.forEach(hospital => {
     cluster.addLayer(
-        L.marker([h.latitude, h.longitude])
-            .bindTooltip(h.name)
-            .on('click', () => window.location.href = '/szpitale/' + h.id)
+      L.marker([hospital.latitude, hospital.longitude])
+        .bindTooltip(hospital.name)
+        .on('click', () => { router.push({ name: 'StatsHospital', params: { hospitalId: hospital.id } }) })
     )
   })
 
@@ -44,20 +53,17 @@ function onMapReady() {
 </script>
 
 <template>
-  <div style="height:600px;">
-    <l-map ref="mapRef" :zoom="zoom" :center="[center.latitude, center.longitude]"
-           :maxZoom="19"
-           :use-global-leaflet="true"
-           @ready="onMapReady">
-      <l-tile-layer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          layer-type="base"
-          name="OpenStreetMap"
-      />
-    </l-map>
+  <div>
+    <client-only>
+      <div style="height:600px;">
+        <l-map ref="mapRef" :zoom="zoom" :center="[center.latitude, center.longitude]" :maxZoom="19"
+          :use-global-leaflet="true" @ready="onMapReady">
+          <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
+            name="OpenStreetMap" />
+        </l-map>
+      </div>
+    </client-only>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
