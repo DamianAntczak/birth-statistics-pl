@@ -2,18 +2,14 @@ import { ViteSSG } from 'vite-ssg'
 import './style.css'
 import App from './App.vue'
 import PrimeVue from 'primevue/config';
-// import {createRouter, createWebHistory} from "vue-router";
 import {createHead} from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
 import HospitalList from "./components/HospitalList.vue";
 import Map from "./components/Map.vue";
 import Aura from '@primeuix/themes/aura';
-import hospitals from './assets/hospitals.json';
 
 
 import 'leaflet/dist/leaflet.css'
-import 'leaflet.markercluster/dist/MarkerCluster.css'
-import 'leaflet.markercluster/dist/MarkerCluster.Default.css'
 import 'primeicons/primeicons.css'
 
 import {Menubar, Image} from "primevue";
@@ -47,10 +43,6 @@ const routes = [
     }
 ]
 
-// const router = createRouter({
-//     history: createWebHistory(),
-//     routes
-// })
 
 export const createApp = ViteSSG(
   App,

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Supercluster from 'supercluster'
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
 import { type PropType, ref } from "vue";
 
@@ -27,27 +28,82 @@ defineProps({
 
 
 async function onMapReady() {
-  if (typeof window === 'undefined') return;
+  if (typeof window === 'undefined') return
+  const L = (await import('leaflet')).default
 
-  const L = await import('leaflet');
+  const map = mapRef.value.leafletObject
 
-  window.L = L;
+  const points = hospitals.map(hospital => ({
+    type: 'Feature',
+    properties: {
+      hospitalId: hospital.id,
+      name: hospital.name
+    },
+    geometry: {
+      type: 'Point',
+      coordinates: [hospital.longitude, hospital.latitude]
+    }
+  }))
 
-  await import('leaflet.markercluster');
-
-  const map = mapRef.value.leafletObject;
-
-  const cluster = L.markerClusterGroup();
-
-  hospitals.forEach(hospital => {
-    cluster.addLayer(
-      L.marker([hospital.latitude, hospital.longitude])
-        .bindTooltip(hospital.name)
-        .on('click', () => { router.push({ name: 'StatsHospital', params: { hospitalId: hospital.id } }) })
-    )
+  const index = new Supercluster({
+    radius: 120,
+    maxZoom: 18
   })
 
-  map.addLayer(cluster)
+  index.load(points)
+
+  const layer = L.layerGroup()
+
+  function renderClusters() {
+    layer.clearLayers()
+
+    const bounds = map.getBounds()
+    const zoom = map.getZoom()
+
+    const clusters = index.getClusters(
+      [
+        bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()
+      ],
+      zoom
+    )
+
+    clusters.forEach(feature => {
+      const [lng, lat] = feature.geometry.coordinates
+      const { cluster, point_count } = feature.properties
+
+      if (cluster) {
+        const marker = L.marker([lat, lng], {
+          icon: L.divIcon({
+            html: `<div class="cluster">${point_count}</div>`,
+            className: 'cluster-wrapper',
+            iconSize: [40, 40]
+          })
+        })
+
+        marker.on('click', () => {
+          map.setView([lat, lng], zoom + 2)
+        })
+
+        layer.addLayer(marker)
+      } else {
+        const marker = L.marker([lat, lng])
+          .bindTooltip(feature.properties.name)
+          .on('click', () => {
+            router.push({
+              name: 'StatsHospital',
+              params: { hospitalId: feature.properties.hospitalId }
+            })
+          })
+
+        layer.addLayer(marker)
+      }
+    })
+  }
+
+  map.on('moveend zoomend', renderClusters)
+
+  renderClusters()
+  map.addLayer(layer)
 }
 
 </script>
