@@ -17,12 +17,12 @@ interface Coordinates {
 defineProps({
   center: {
     type: Object as PropType<Coordinates>,
-    default: () => ({ latitude: 52.33333, longitude: 17.23333 }),
+    default: () => ({ latitude: 52.191097, longitude: 19.355406 }),
     required: false
   },
   zoom: {
     type: Number,
-    default: 7.5
+    default: 7
   }
 });
 

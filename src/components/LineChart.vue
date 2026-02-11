@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {computed, ref, watch} from "vue";
+import { computed, ref, watch } from "vue";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,29 +13,27 @@ import {
 } from 'chart.js'
 import { Line } from 'vue-chartjs'
 import * as chartConfig from '../common/chartConfig.ts'
-import jsonData from '../assets/year-stats-PL-PO.json';
 import type { GraphData } from '../common/GraphData.ts'
-import type {StatsType} from "../common/StatsType.ts";
+import type { StatsType } from "../common/StatsType.ts";
+import YearStatsRepository from "../repositories/YearStatsRepository.ts";
 
 
 ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
 )
 
 const props = defineProps<{
-  hospitalId?: string
+  hospital?: any,
   statsType?: string
 }>()
 
-const data: { graphDataMap: GraphData } = jsonData;
-
-const chartData =  ref<ChartData<'line'>>({
+const chartData = ref<ChartData<'line'>>({
   labels: [],
   datasets: []
 });
@@ -47,28 +45,34 @@ const options = computed(() => {
 const datasetLabels = chartConfig.datasetLabels;
 const datasetColors = chartConfig.datasetColors;
 
-function updateChart(hospitalId: any, statsType: StatsType) {
+async function updateChart(hospital: any, statsType: StatsType) {
+  if (!hospital) return;
 
-  chartData.value = {
-    labels: data.graphDataMap[hospitalId].years,
-    datasets: [
-      {
-        label: datasetLabels.get(statsType),
-        backgroundColor: datasetColors.get(statsType),
-        data: data.graphDataMap[hospitalId].statistics[statsType]
-      }
-    ]
+  const data = await YearStatsRepository.getGraphData(hospital.voivodeshipCode, hospital.id);
+
+  if (data) {
+
+    chartData.value = {
+      labels: data.years,
+      datasets: [
+        {
+          label: datasetLabels.get(statsType),
+          backgroundColor: datasetColors.get(statsType),
+          data: data.statistics[statsType]
+        }
+      ]
+    }
   }
 }
 
 watch(
-    [() => props.hospitalId, () => props.statsType],
-    ([newHospitalId, newStatsType]) => {
+  [() => props.hospital, () => props.statsType],
+  ([newHospital, newStatsType]) => {
 
-      if (newHospitalId && newStatsType) {
-        updateChart(newHospitalId, newStatsType as StatsType);
-      }
+    if (newHospital && newStatsType) {
+      updateChart(newHospital, newStatsType as StatsType);
     }
+  }
 );
 
 
@@ -80,6 +84,4 @@ watch(
   </figure>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

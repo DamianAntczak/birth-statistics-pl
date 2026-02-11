@@ -70,7 +70,7 @@ function onHospitalChanged(payload: any) {
     <SelectStatsType @statsTypeChanged="onStatsTypeChanged($event)" />
     <h1 v-if="hospital" class="m-2">Statystyki porodów – {{ hospital.name }} w {{ hospital.city }}</h1>
     <h1 v-else class="m-2">Statystyki porodów w Polsce 2010-2025</h1>
-    <LineChart :hospital-id="hospitalId" :stats-type="statsType" />
+    <LineChart :hospital="hospital" :stats-type="statsType" />
     <Panel header="Źródło danych">
       Dane pochodzą z portalu <a
         href="https://ezdrowie.gov.pl/portal/home/badania-i-dane/zdrowe-dane/monitorowanie/porody-opieka-okoloporodowa">https://ezdrowie.gov.pl</a><br />
