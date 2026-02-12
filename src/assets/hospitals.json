@@ -1,10 +1,73 @@
 [{
+    "id": "20002410",
+    "name": "Powiatowy Szpital w Aleksandrowie Kujawskim sp. z o.o.",
+    "city": "Aleksandrów Kujawski",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.8738784,
+    "longitude": 18.6970411
+}, {
+    "id": "20000787-20000803",
+    "name": "Zespół Opieki Zdrowotnej w Brodnicy; Regionalny Szpital Specjalistyczny Im. Dr Władysława Biegańskiego w Grudziądzu",
+    "city": "Brodnica",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.261599,
+    "longitude": 19.3957233
+}, {
+    "id": "20001364",
+    "name": "Samodzielny Publiczny Wielospecjalistyczny Zakład Opieki Zdrowotnej MSWiA w Bydgoszczy",
+    "city": "Bydgoszcz",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.1260921,
+    "longitude": 18.0111071
+}, {
+    "id": "20000746",
+    "name": "Wielospecjalistyczny Szpital Miejski im. Dr E. Warmińskiego SPZOZ w Bydgoszczy",
+    "city": "Bydgoszcz",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.1018568,
+    "longitude": 18.0461861
+}, {
+    "id": "20003633-20000768",
+    "name": "Szpital Uniwersytecki Nr 2 im. Dr Jana Biziela w Bydgoszczy",
+    "city": "Bydgoszcz",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.1153191,
+    "longitude": 18.0268196
+}, {
+    "id": "20000788",
+    "name": "Zespół Opieki Zdrowotnej w Chełmnie",
+    "city": "Chełmno",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.3447606,
+    "longitude": 18.4208655
+}, {
+    "id": "20100024",
+    "name": "Szpital Powiatowy sp. z o.o. w Chełmży",
+    "city": "Chełmża",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.1872855,
+    "longitude": 18.6105934
+}, {
+    "id": "150003546",
+    "name": "Szpital Powiatowy Im. Prof. Romana Drewsa",
+    "city": "Chodzież",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.987833,
+    "longitude": 16.914807
+}, {
     "id": "70001992",
     "name": "Specjalistyczny Szpital Wojewódzki w Ciechanowie",
     "city": "Ciechanów",
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.8832804,
     "longitude": 20.6366535
+}, {
+    "id": "150000002",
+    "name": "Zespół Zakładów Opieki Zdrowotnej w Czarnkowie",
+    "city": "Czarnków",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.897612,
+    "longitude": 16.5571678
 }, {
     "id": "70001663",
     "name": "SPZOZ w Garwolinie",
@@ -13,12 +76,47 @@
     "latitude": 51.870248,
     "longitude": 21.6366399
 }, {
+    "id": "150000025",
+    "name": "Szpital Pomnik Chrztu Polski",
+    "city": "Gniezno",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.5401413,
+    "longitude": 17.6004578
+}, {
+    "id": "20100026",
+    "name": "Szpital Powiatowy sp. z o.o.",
+    "city": "Golub-Dobrzyń",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.1093346,
+    "longitude": 19.0717477
+}, {
     "id": "70100294",
     "name": "Arion Med sp. z o.o.",
     "city": "Gorzewo",
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.4694584,
     "longitude": 19.4976765
+}, {
+    "id": "150001253",
+    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Gostyniu",
+    "city": "Gostyń",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.8827399,
+    "longitude": 17.0108213
+}, {
+    "id": "150000016",
+    "name": "SPZOZ Grodzisk Wielkopolski",
+    "city": "Grodzisk Wielkopolski",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.2284,
+    "longitude": 16.36657
+}, {
+    "id": "20000803",
+    "name": "Regionalny Szpital Specjalistyczny im. Dr Władysława Biegańskiego w Grudziądzu",
+    "city": "Grudziądz",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.4527007,
+    "longitude": 18.7864785
 }, {
     "id": "70603339-70001797",
     "name": "Powiatowe Centrum Medyczne w Grójcu sp. z o.o.; SPZOZ w Grójcu",
@@ -27,6 +125,13 @@
     "latitude": 51.8682256,
     "longitude": 20.8687258
 }, {
+    "id": "20000777",
+    "name": "Szpital Wielospecjalistyczny im. Dr. Ludwika Błażka w Inowrocławiu",
+    "city": "Inowrocław",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.7804641,
+    "longitude": 18.2631406
+}, {
     "id": "70001798",
     "name": "SPZZOZ - Szpital w Iłży",
     "city": "Iłża",
@@ -34,12 +139,82 @@
     "latitude": 51.1655354,
     "longitude": 21.2332857
 }, {
+    "id": "150008350-150000029",
+    "name": "Szpital Powiatowy w Jarocinie; ZZOZ w Jarocinie w likwidacji",
+    "city": "Jarocin",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.9694317,
+    "longitude": 17.5046366
+}, {
+    "id": "150006180",
+    "name": "Wojewódzki Szpital Zespolony im. Ludwika Perzyny w Kaliszu",
+    "city": "Kalisz",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.7696146,
+    "longitude": 18.101671
+}, {
+    "id": "150000032",
+    "name": "Wojewódzki Szpital Zespolony im. Dr Romana Ostrzyckiego w Koninie",
+    "city": "Konin",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.2270351,
+    "longitude": 18.2655682
+}, {
     "id": "70001796",
     "name": "SPZZOZ w Kozienicach",
     "city": "Kozienice",
     "voivodeshipCode": "PL-MZ",
     "latitude": 51.5918996,
     "longitude": 21.5257911
+}, {
+    "id": "150002160",
+    "name": "SPZOZ w Kole",
+    "city": "Koło",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.1849131,
+    "longitude": 18.6188722
+}, {
+    "id": "150001592",
+    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Kościanie",
+    "city": "Kościan",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.084779,
+    "longitude": 16.6473539
+}, {
+    "id": "150003571",
+    "name": "SPZOZ w Krotoszynie",
+    "city": "Krotoszyn",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.64552,
+    "longitude": 17.38157
+}, {
+    "id": "150003557",
+    "name": "SPZOZ w Kępnie",
+    "city": "Kępno",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.2767727,
+    "longitude": 17.9837786
+}, {
+    "id": "150003556",
+    "name": "Wojewódzki Szpital Wielospecjalistyczny Im. Dr. Jana Jonstona w Lesznie",
+    "city": "Leszno",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.8392477,
+    "longitude": 16.6069602
+}, {
+    "id": "20000550",
+    "name": "Niepubliczny Zakład Usług Medycznych \"Bra-Med\" w Lipnie utworzony przez Lecha Bramorskiego",
+    "city": "Lipno",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.8439662,
+    "longitude": 19.1845553
+}, {
+    "id": "20003719",
+    "name": "NZOZ Szpital Lipno sp. z o.o.",
+    "city": "Lipno",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.8421363,
+    "longitude": 19.1577404
 }, {
     "id": "70001794",
     "name": "SPZZOZ w Lipsku",
@@ -55,12 +230,26 @@
     "latitude": 52.8617433,
     "longitude": 21.0870556
 }, {
+    "id": "150001425",
+    "name": "SPZOZ w Międzychodzie",
+    "city": "Międzychód",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.5994502,
+    "longitude": 15.889771
+}, {
     "id": "70001665",
     "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej, Mińsk Mazowiecki",
     "city": "Mińsk Mazowiecki",
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.1740336,
     "longitude": 21.5771505
+}, {
+    "id": "20000779",
+    "name": "SPZOZ w Mogilnie",
+    "city": "Mogilno",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.6583983,
+    "longitude": 17.9493759
 }, {
     "id": "70001993",
     "name": "SPZOZ w Mławie",
@@ -83,6 +272,20 @@
     "latitude": 52.419922,
     "longitude": 20.7238175
 }, {
+    "id": "150000019",
+    "name": "SPZOZ Imienia Doktora Kazimierza Hołogi",
+    "city": "Nowy Tomyśl",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.3153504,
+    "longitude": 16.1413949
+}, {
+    "id": "150000007",
+    "name": "SPZOZ w Obornikach",
+    "city": "Oborniki",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.6533218,
+    "longitude": 16.8162465
+}, {
     "id": "70001470",
     "name": "Mazowiecki Szpital Specjalistyczny im. Dr Józefa Psarskiego w Ostrołęce",
     "city": "Ostrołęka",
@@ -90,12 +293,26 @@
     "latitude": 53.0623014,
     "longitude": 21.5902543
 }, {
+    "id": "150000024",
+    "name": "Ostrzeszowskie Centrum Zdrowia sp. z o.o.",
+    "city": "Ostrzeszów",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.425634,
+    "longitude": 17.9259962
+}, {
     "id": "70001479",
     "name": "SPZZOZ w Ostrowi Mazowieckiej",
     "city": "Ostrów Mazowiecka",
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.7989759,
     "longitude": 21.9128706
+}, {
+    "id": "150000028",
+    "name": "Zespół Zakładów Opieki Zdrowotnej Ostrów Wielkopolski",
+    "city": "Ostrów Wielkopolski",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.6551876,
+    "longitude": 17.8259427
 }, {
     "id": "70604278-70000977",
     "name": "Powiatowe Centrum Zdrowia sp. z o.o., Otwock; ZPZOZ w Otwocku",
@@ -118,26 +335,47 @@
     "latitude": 51.4752618,
     "longitude": 21.4448031
 }, {
-    "id": "70100223",
-    "name": "Płocki Zakład Opieki Zdrowotnej sp. z o.o.",
-    "city": "Płock",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.5401694,
-    "longitude": 19.6959905
+    "id": "150000031",
+    "name": "Szpital Specjalistyczny w Pile im. Stanisława Staszica",
+    "city": "Piła",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 53.1218571,
+    "longitude": 16.7193766
 }, {
-    "id": "70002166",
-    "name": "Wojewódzki Szpital Zespolony w Płocku",
-    "city": "Płock",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.5573102,
-    "longitude": 19.6548177
+    "id": "150007443",
+    "name": "Pleszewskie Centrum Medyczne w Pleszewie sp. z o.o.",
+    "city": "Pleszew",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.8977707,
+    "longitude": 17.7649302
 }, {
-    "id": "70001994",
-    "name": "SPZZOZ im. Marszałka Józefa Piłsudskiego w Płońsku",
-    "city": "Płońsk",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.6304312,
-    "longitude": 20.3771485
+    "id": "150003180",
+    "name": "Specjalistyczny Zespół Opieki Zdrowotnej Nad Matką i Dzieckiem w Poznaniu",
+    "city": "Poznań",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.395903,
+    "longitude": 16.8947779
+}, {
+    "id": "150000038",
+    "name": "Szpital Wojewódzki w Poznaniu",
+    "city": "Poznań",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.4394574,
+    "longitude": 16.9065214
+}, {
+    "id": "150000072",
+    "name": "Szpital Miejski im. Franciszka Raszei",
+    "city": "Poznań",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.4134725,
+    "longitude": 16.9128853
+}, {
+    "id": "150000001",
+    "name": "Ginekologiczno-Położniczy Szpital Kliniczny Uniwersytetu Medycznego im. Karola Marcinkowskiego w Poznaniu",
+    "city": "Poznań",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.4093922,
+    "longitude": 16.8955726
 }, {
     "id": "70000993",
     "name": "SPZZOZ w Pruszkowie",
@@ -167,6 +405,27 @@
     "latitude": 52.6941526,
     "longitude": 21.1141927
 }, {
+    "id": "70100223",
+    "name": "Płocki Zakład Opieki Zdrowotnej sp. z o.o.",
+    "city": "Płock",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.5401694,
+    "longitude": 19.6959905
+}, {
+    "id": "70002166",
+    "name": "Wojewódzki Szpital Zespolony w Płocku",
+    "city": "Płock",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.5573102,
+    "longitude": 19.6548177
+}, {
+    "id": "70001994",
+    "name": "SPZZOZ im. Marszałka Józefa Piłsudskiego w Płońsku",
+    "city": "Płońsk",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.6304312,
+    "longitude": 20.3771485
+}, {
     "id": "70300493-70001788",
     "name": "Mazowiecki Szpital Specjalistyczny sp. z o.o.; Wojewódzki Szpital Specjalistyczny w Radomiu",
     "city": "Radom",
@@ -180,6 +439,27 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 51.3986413,
     "longitude": 21.1444901
+}, {
+    "id": "20000731",
+    "name": "SPZOZ, Radziejów",
+    "city": "Radziejów",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.6191255,
+    "longitude": 18.5171426
+}, {
+    "id": "150007789",
+    "name": "Szpital Powiatowy w Rawiczu sp. z o.o.",
+    "city": "Rawicz",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 51.6145513,
+    "longitude": 16.8427724
+}, {
+    "id": "20000732",
+    "name": "SPZOZ w Rypinie",
+    "city": "Rypin",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.0670607,
+    "longitude": 19.4159979
 }, {
     "id": "70603563-70001669",
     "name": "Mazowiecki Szpital Wojewódzki im. Św. Jana Pawła II w Siedlcach sp. z o.o.; Wojewódzki Szpital Specjalistyczny w Siedlcach",
@@ -215,6 +495,55 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.4055052,
     "longitude": 22.2432954
+}, {
+    "id": "150003604",
+    "name": "SPZOZ w Szamotułach",
+    "city": "Szamotuły",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.6106658,
+    "longitude": 16.5815048
+}, {
+    "id": "20002787",
+    "name": "NZOZ Nowy Szpital w Nakle i Szubinie sp. z o.o.",
+    "city": "Szubin",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.0082432,
+    "longitude": 17.7304202
+}, {
+    "id": "150000013",
+    "name": "SPZOZ w Słupcy",
+    "city": "Słupca",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.2911452,
+    "longitude": 17.8733407
+}, {
+    "id": "20000773",
+    "name": "Wojewódzki Szpital Zespolony im. L. Rydygiera w Toruniu",
+    "city": "Toruń",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.0278129,
+    "longitude": 18.5818537
+}, {
+    "id": "150000006",
+    "name": "Szpital Powiatowy im. Jana Pawła II w Trzciance",
+    "city": "Trzcianka",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 53.0396379,
+    "longitude": 16.4642394
+}, {
+    "id": "20002028",
+    "name": "Szpital Tucholski sp. z o.o.",
+    "city": "Tuchola",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.5909399,
+    "longitude": 17.8650374
+}, {
+    "id": "150000009",
+    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej, Turek",
+    "city": "Turek",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.0102569,
+    "longitude": 18.4908247
 }, {
     "id": "70604614-70000968",
     "name": "Szpital Praski p.w. Przemienienia Pańskiego",
@@ -321,12 +650,19 @@
     "latitude": 52.2072875,
     "longitude": 20.9840437
 }, {
-    "id": "70001667",
-    "name": "SPZOZ w Węgrowie",
-    "city": "Węgrów",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.4055903,
-    "longitude": 22.0636883
+    "id": "20002493",
+    "name": "Novum-Med sp. z o.o.",
+    "city": "Więcbork",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.3553419,
+    "longitude": 17.4916883
+}, {
+    "id": "150003539",
+    "name": "SPZOZ w Wolsztynie",
+    "city": "Wolsztyn",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.1166044,
+    "longitude": 16.1179082
 }, {
     "id": "70000970",
     "name": "Szpital Matki Bożej Nieustającej Pomocy w Wołominie",
@@ -334,6 +670,20 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.3462369,
     "longitude": 21.2214648
+}, {
+    "id": "150007437",
+    "name": "Szpital Powiatowy we Wrześni sp. z o.o.",
+    "city": "Września",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.3252059,
+    "longitude": 17.573187
+}, {
+    "id": "150008298-150000018",
+    "name": "Szpital Powiatowy w Wyrzysku sp. z o.o.; Zespół Opieki Zdrowotnej Wyrzysk w likwidacji",
+    "city": "Wyrzysk",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 53.1490345,
+    "longitude": 17.2720573
 }, {
     "id": "70001439",
     "name": "SPZZOZ w Wyszkowie",
@@ -356,208 +706,40 @@
     "latitude": 52.5986877,
     "longitude": 21.4519674
 }, {
-    "id": "70001180",
-    "name": "SPZZOZ w Żurominie",
-    "city": "Żuromin",
+    "id": "20003629",
+    "name": "NZOZ Nowy Szpital w Wąbrzeźnie - Nowy Szpital w Wąbrzeźnie sp. z o.o.",
+    "city": "Wąbrzeźno",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.2760579,
+    "longitude": 18.9474828
+}, {
+    "id": "150003183",
+    "name": "Zespół Opieki Zdrowotnej w Wągrowcu",
+    "city": "Wągrowiec",
+    "voivodeshipCode": "PL-PO",
+    "latitude": 52.8178856,
+    "longitude": 17.204699
+}, {
+    "id": "70001667",
+    "name": "SPZOZ w Węgrowie",
+    "city": "Węgrów",
     "voivodeshipCode": "PL-MZ",
-    "latitude": 53.0702958,
-    "longitude": 19.9191732
+    "latitude": 52.4055903,
+    "longitude": 22.0636883
 }, {
-    "id": "70603796-70000989",
-    "name": "Centrum Zdrowia Mazowsza Zachodniego sp. z o.o.; Zespół Opieki Zdrowotnej w Żyrardowie",
-    "city": "Żyrardów",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.0592725,
-    "longitude": 20.4403414
+    "id": "20004500-20000748",
+    "name": "Wojewódzki Szpital Specjalistyczny we Włocławku",
+    "city": "Włocławek",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.659482,
+    "longitude": 19.0314672
 }, {
-    "id": "150003546",
-    "name": "Szpital Powiatowy Im. Prof. Romana Drewsa",
-    "city": "Chodzież",
+    "id": "150000011",
+    "name": "Szpital Powiatowy im. Alfreda Sokołowskiego w Złotowie",
+    "city": "Złotów",
     "voivodeshipCode": "PL-PO",
-    "latitude": 52.987833,
-    "longitude": 16.914807
-}, {
-    "id": "150000002",
-    "name": "Zespół Zakładów Opieki Zdrowotnej w Czarnkowie",
-    "city": "Czarnków",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.897612,
-    "longitude": 16.5571678
-}, {
-    "id": "150000025",
-    "name": "Szpital Pomnik Chrztu Polski",
-    "city": "Gniezno",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.5401413,
-    "longitude": 17.6004578
-}, {
-    "id": "150001253",
-    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Gostyniu",
-    "city": "Gostyń",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.8827399,
-    "longitude": 17.0108213
-}, {
-    "id": "150000016",
-    "name": "SPZOZ Grodzisk Wielkopolski",
-    "city": "Grodzisk Wielkopolski",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.2284,
-    "longitude": 16.36657
-}, {
-    "id": "150008350-150000029",
-    "name": "Szpital Powiatowy w Jarocinie; ZZOZ w Jarocinie w likwidacji",
-    "city": "Jarocin",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.9694317,
-    "longitude": 17.5046366
-}, {
-    "id": "150006180",
-    "name": "Wojewódzki Szpital Zespolony im. Ludwika Perzyny w Kaliszu",
-    "city": "Kalisz",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.7696146,
-    "longitude": 18.101671
-}, {
-    "id": "150003557",
-    "name": "SPZOZ w Kępnie",
-    "city": "Kępno",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.2767727,
-    "longitude": 17.9837786
-}, {
-    "id": "150002160",
-    "name": "SPZOZ w Kole",
-    "city": "Koło",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.1849131,
-    "longitude": 18.6188722
-}, {
-    "id": "150000032",
-    "name": "Wojewódzki Szpital Zespolony im. Dr Romana Ostrzyckiego w Koninie",
-    "city": "Konin",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.2270351,
-    "longitude": 18.2655682
-}, {
-    "id": "150001592",
-    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Kościanie",
-    "city": "Kościan",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.084779,
-    "longitude": 16.6473539
-}, {
-    "id": "150003571",
-    "name": "SPZOZ w Krotoszynie",
-    "city": "Krotoszyn",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.64552,
-    "longitude": 17.38157
-}, {
-    "id": "150003556",
-    "name": "Wojewódzki Szpital Wielospecjalistyczny Im. Dr. Jana Jonstona w Lesznie",
-    "city": "Leszno",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.8392477,
-    "longitude": 16.6069602
-}, {
-    "id": "150001425",
-    "name": "SPZOZ w Międzychodzie",
-    "city": "Międzychód",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.5994502,
-    "longitude": 15.889771
-}, {
-    "id": "150000019",
-    "name": "SPZOZ Imienia Doktora Kazimierza Hołogi",
-    "city": "Nowy Tomyśl",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.3153504,
-    "longitude": 16.1413949
-}, {
-    "id": "150000007",
-    "name": "SPZOZ w Obornikach",
-    "city": "Oborniki",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.6533218,
-    "longitude": 16.8162465
-}, {
-    "id": "150000028",
-    "name": "Zespół Zakładów Opieki Zdrowotnej Ostrów Wielkopolski",
-    "city": "Ostrów Wielkopolski",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.6551876,
-    "longitude": 17.8259427
-}, {
-    "id": "150000024",
-    "name": "Ostrzeszowskie Centrum Zdrowia sp. z o.o.",
-    "city": "Ostrzeszów",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.425634,
-    "longitude": 17.9259962
-}, {
-    "id": "150000031",
-    "name": "Szpital Specjalistyczny w Pile im. Stanisława Staszica",
-    "city": "Piła",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 53.1218571,
-    "longitude": 16.7193766
-}, {
-    "id": "150007443",
-    "name": "Pleszewskie Centrum Medyczne w Pleszewie sp. z o.o.",
-    "city": "Pleszew",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.8977707,
-    "longitude": 17.7649302
-}, {
-    "id": "150003180",
-    "name": "Specjalistyczny Zespół Opieki Zdrowotnej Nad Matką i Dzieckiem w Poznaniu",
-    "city": "Poznań",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.395903,
-    "longitude": 16.8947779
-}, {
-    "id": "150000038",
-    "name": "Szpital Wojewódzki w Poznaniu",
-    "city": "Poznań",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.4394574,
-    "longitude": 16.9065214
-}, {
-    "id": "150000072",
-    "name": "Szpital Miejski im. Franciszka Raszei",
-    "city": "Poznań",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.4134725,
-    "longitude": 16.9128853
-}, {
-    "id": "150000001",
-    "name": "Ginekologiczno-Położniczy Szpital Kliniczny Uniwersytetu Medycznego im. Karola Marcinkowskiego w Poznaniu",
-    "city": "Poznań",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.4093922,
-    "longitude": 16.8955726
-}, {
-    "id": "150007789",
-    "name": "Szpital Powiatowy w Rawiczu sp. z o.o.",
-    "city": "Rawicz",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 51.6145513,
-    "longitude": 16.8427724
-}, {
-    "id": "150000013",
-    "name": "SPZOZ w Słupcy",
-    "city": "Słupca",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.2911452,
-    "longitude": 17.8733407
-}, {
-    "id": "150003604",
-    "name": "SPZOZ w Szamotułach",
-    "city": "Szamotuły",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.6106658,
-    "longitude": 16.5815048
+    "latitude": 53.3554552,
+    "longitude": 17.0449343
 }, {
     "id": "150008893-150003537",
     "name": "Szpital Powiatowy im. Tadeusza Malińskiego w Śremie sp. z o.o.; Szpital w  Śremie w likwidacji",
@@ -573,52 +755,31 @@
     "latitude": 52.227462,
     "longitude": 17.2849775
 }, {
-    "id": "150000006",
-    "name": "Szpital Powiatowy im. Jana Pawła II w Trzciance",
-    "city": "Trzcianka",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 53.0396379,
-    "longitude": 16.4642394
+    "id": "20002603",
+    "name": "NZOZ Nowy Szpital sp. z o.o.",
+    "city": "Świecie",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 53.4138574,
+    "longitude": 18.4667693
 }, {
-    "id": "150000009",
-    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej, Turek",
-    "city": "Turek",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.0102569,
-    "longitude": 18.4908247
+    "id": "20002494",
+    "name": "Pałuckie Centrum Zdrowia sp. z o.o.",
+    "city": "Żnin",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.8465668,
+    "longitude": 17.7164981
 }, {
-    "id": "150003183",
-    "name": "Zespół Opieki Zdrowotnej w Wągrowcu",
-    "city": "Wągrowiec",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.8178856,
-    "longitude": 17.204699
+    "id": "70001180",
+    "name": "SPZZOZ w Żurominie",
+    "city": "Żuromin",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 53.0702958,
+    "longitude": 19.9191732
 }, {
-    "id": "150003539",
-    "name": "SPZOZ w Wolsztynie",
-    "city": "Wolsztyn",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.1166044,
-    "longitude": 16.1179082
-}, {
-    "id": "150007437",
-    "name": "Szpital Powiatowy we Wrześni sp. z o.o.",
-    "city": "Września",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 52.3252059,
-    "longitude": 17.573187
-}, {
-    "id": "150008298-150000018",
-    "name": "Szpital Powiatowy w Wyrzysku sp. z o.o.; Zespół Opieki Zdrowotnej Wyrzysk w likwidacji",
-    "city": "Wyrzysk",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 53.1490345,
-    "longitude": 17.2720573
-}, {
-    "id": "150000011",
-    "name": "Szpital Powiatowy im. Alfreda Sokołowskiego w Złotowie",
-    "city": "Złotów",
-    "voivodeshipCode": "PL-PO",
-    "latitude": 53.3554552,
-    "longitude": 17.0449343
+    "id": "70603796-70000989",
+    "name": "Centrum Zdrowia Mazowsza Zachodniego sp. z o.o.; Zespół Opieki Zdrowotnej w Żyrardowie",
+    "city": "Żyrardów",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.0592725,
+    "longitude": 20.4403414
 }]

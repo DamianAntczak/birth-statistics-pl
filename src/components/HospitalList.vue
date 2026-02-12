@@ -73,8 +73,11 @@ onMounted(async () => {
               <div class="flex flex-row md:flex-col justify-between items-start gap-2">
                 <div>
                   <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.city }} -
-                    <span class="font-normal"><template v-if="item.voivodeshipCode === 'PL-PO'">wielkopolskie</template>
-                    <template v-if="item.voivodeshipCode === 'PL-MZ'">mazowieckie</template></span>
+                    <span class="font-normal">
+                      <template v-if="item.voivodeshipCode === 'PL-PO'">wielkopolskie</template>
+                    <template v-if="item.voivodeshipCode === 'PL-MZ'">mazowieckie</template>
+                    <template v-if="item.voivodeshipCode === 'PL-KP'">kujawsko-pomorskie</template>
+                  </span>
                   </span>
                   <div class="text-lg font-medium mt-2">{{ item.name }}</div>
                 </div>
