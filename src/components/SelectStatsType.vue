@@ -5,11 +5,12 @@ import {StatsType} from "../common/StatsType.ts";
 import {Baby0203m, SurgicalSterilization, Syringe, VascularSurgeryOutline} from "healthicons-vue";
 import SelectButton from 'primevue/selectbutton';
 
+const props = defineProps<{
+  hospitalId?: string
+}>()
 
 const router = useRouter();
 const route = useRoute();
-
-const hospitalId = route.params.hospitalId as string;
 
 const statisticType = ref('');
 
@@ -37,7 +38,7 @@ const emit = defineEmits({statsTypeChanged: (_value: string) => true})
 
 
 watch(statisticType, (newValue) => {
-  router.push({name: 'StatsDetail', params: {hospitalId: hospitalId, statsType: newValue}})
+  router.push({name: 'StatsDetail', params: {hospitalId: props.hospitalId, statsType: newValue}})
   statisticTypeChanged(statisticType.value)
 });
 

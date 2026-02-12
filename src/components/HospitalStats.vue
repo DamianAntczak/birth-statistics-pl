@@ -67,7 +67,7 @@ function onHospitalChanged(payload: any) {
 <template>
   <div>
     <SelectHospital @hospitalChanged="onHospitalChanged" :stats-type="statsType" />
-    <SelectStatsType @statsTypeChanged="onStatsTypeChanged($event)" />
+    <SelectStatsType @statsTypeChanged="onStatsTypeChanged($event)" :hospital-id="hospitalId" />
     <h1 v-if="hospital" class="m-2">Statystyki porodów – {{ hospital.name }} w {{ hospital.city }}</h1>
     <h1 v-else class="m-2">Statystyki porodów w Polsce 2010-2025</h1>
     <LineChart :hospital="hospital" :stats-type="statsType" />
