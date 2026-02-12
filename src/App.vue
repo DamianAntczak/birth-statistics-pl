@@ -39,12 +39,12 @@ const menuItems = ref<MenuItem[] | undefined>([
         <div style="text-align: center">
           <Button label="Primary" variant="text">
             <i class="pi pi-list" />
-            <RouterLink to="/szpitale">Lista oddziałów położniczych w Wielkopolsce</RouterLink>
+            <RouterLink to="/szpitale">Lista oddziałów położniczych</RouterLink>
           </Button>
           |
           <Button label="primary" variant="text">
             <i class="pi pi-map" />
-            <RouterLink to="/mapa">Mapa oddziałów położniczych w Wielkopolsce</RouterLink>
+            <RouterLink to="/mapa">Mapa oddziałów położniczych</RouterLink>
           </Button>
         </div>
       </footer>
