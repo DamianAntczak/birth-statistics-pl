@@ -6,12 +6,47 @@
     "latitude": 52.8738784,
     "longitude": 18.6970411
 }, {
+    "id": "140042",
+    "name": "Szpital Wojewódzki im. Jana Pawła II w Bełchatowie",
+    "city": "Bełchatów",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.3752991,
+    "longitude": 19.3501753
+}, {
+    "id": "3401001",
+    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Bogatyni",
+    "city": "Bogatynia",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.907102,
+    "longitude": 14.9704671
+}, {
+    "id": "3401024",
+    "name": "Zespół Opieki Zdrowotnej w Bolesławcu",
+    "city": "Bolesławiec",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.2544738,
+    "longitude": 15.5669449
+}, {
     "id": "20000787-20000803",
     "name": "Zespół Opieki Zdrowotnej w Brodnicy; Regionalny Szpital Specjalistyczny Im. Dr Władysława Biegańskiego w Grudziądzu",
     "city": "Brodnica",
     "voivodeshipCode": "PL-KP",
     "latitude": 53.261599,
     "longitude": 19.3957233
+}, {
+    "id": "3102923",
+    "name": "NZOZ Powiatowe Centrum Medyczne w Wołowie",
+    "city": "Brzeg Dolny",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.263677,
+    "longitude": 16.7090628
+}, {
+    "id": "210540-110024",
+    "name": "Szpital Powiatowy w Brzezinach; SPZOZ w Brzezinach w likwidacji",
+    "city": "Brzeziny",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.8056282,
+    "longitude": 19.7542766
 }, {
     "id": "20001364",
     "name": "Samodzielny Publiczny Wielospecjalistyczny Zakład Opieki Zdrowotnej MSWiA w Bydgoszczy",
@@ -34,6 +69,13 @@
     "latitude": 53.1153191,
     "longitude": 18.0268196
 }, {
+    "id": "1555",
+    "name": "Szpital Powiatu Bytowskiego sp. z o.o.",
+    "city": "Bytów",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.1783887,
+    "longitude": 17.4857984
+}, {
     "id": "20000788",
     "name": "Zespół Opieki Zdrowotnej w Chełmnie",
     "city": "Chełmno",
@@ -55,6 +97,13 @@
     "latitude": 52.987833,
     "longitude": 16.914807
 }, {
+    "id": "18",
+    "name": "Szpital Specjalistyczny im. J. K. Łukowicza w Chojnicach",
+    "city": "Chojnice",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 53.7117853,
+    "longitude": 17.547308
+}, {
     "id": "70001992",
     "name": "Specjalistyczny Szpital Wojewódzki w Ciechanowie",
     "city": "Ciechanów",
@@ -69,12 +118,54 @@
     "latitude": 52.897612,
     "longitude": 16.5571678
 }, {
+    "id": "12",
+    "name": "SPZOZ w Człuchowie",
+    "city": "Człuchów",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 53.6595144,
+    "longitude": 17.3542445
+}, {
+    "id": "3202112",
+    "name": "NZOZ Szpital Powiatowy w Dzierżoniowie sp. z o.o.",
+    "city": "Dzierżoniów",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.7286301,
+    "longitude": 16.6586022
+}, {
     "id": "70001663",
     "name": "SPZOZ w Garwolinie",
     "city": "Garwolin",
     "voivodeshipCode": "PL-MZ",
     "latitude": 51.870248,
     "longitude": 21.6366399
+}, {
+    "id": "5",
+    "name": "Uniwersyteckie Centrum Kliniczne",
+    "city": "Gdańsk",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.3658105,
+    "longitude": 18.6195613
+}, {
+    "id": "000085-000004",
+    "name": "Copernicus Podmiot Leczniczy sp. z o.o.; Wielospecjalistyczny Szpital Św. Wojciecha",
+    "city": "Gdańsk",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.4026312,
+    "longitude": 18.6134734
+}, {
+    "id": "85",
+    "name": "Copernicus Podmiot Leczniczy sp. z o.o.",
+    "city": "Gdańsk",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.3508435,
+    "longitude": 18.6390996
+}, {
+    "id": "120",
+    "name": "Szpitale Pomorskie sp. z o.o.",
+    "city": "Gdynia",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.4883112,
+    "longitude": 18.5525522
 }, {
     "id": "150000025",
     "name": "Szpital Pomnik Chrztu Polski",
@@ -125,6 +216,27 @@
     "latitude": 51.8682256,
     "longitude": 20.8687258
 }, {
+    "id": "3102988-3101097",
+    "name": "Polskie Centrum Zdrowia Góra Śląska sp. z o.o.; Samodzielny Publiczny Zespół Opieki Zdrowotnej w Górze w likwidacji",
+    "city": "Góra",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.6651021,
+    "longitude": 16.5404402
+}, {
+    "id": "3301039",
+    "name": "Głogowski Szpital Powiatowy sp. z o.o.",
+    "city": "Głogów",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.6552148,
+    "longitude": 16.0769852
+}, {
+    "id": "210843-210523",
+    "name": "Szpital Głowno Grupa Zdrowie sp. z o.o.; Centrum Zdrowia ABIS przy Wyższej Szkole Informatyki i Umiejętności w Łodzi; NZOZ \"Centrum Medyczne WSINF\" w Głownie",
+    "city": "Głowno",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.95705,
+    "longitude": 19.73329
+}, {
     "id": "20000777",
     "name": "Szpital Wielospecjalistyczny im. Dr. Ludwika Błażka w Inowrocławiu",
     "city": "Inowrocław",
@@ -146,6 +258,13 @@
     "latitude": 51.9694317,
     "longitude": 17.5046366
 }, {
+    "id": "3401036-3401030",
+    "name": "Wojewódzkie Centrum Szpitalne Kotliny Jeleniogórskiej; SPZOZ Szpital Wojewódzki w Jeleniej Górze",
+    "city": "Jelenia Góra",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.9135071,
+    "longitude": 15.7646765
+}, {
     "id": "150006180",
     "name": "Wojewódzki Szpital Zespolony im. Ludwika Perzyny w Kaliszu",
     "city": "Kalisz",
@@ -153,12 +272,33 @@
     "latitude": 51.7696146,
     "longitude": 18.101671
 }, {
+    "id": "3402443",
+    "name": "Powiatowe Centrum Zdrowia w Kamiennej Górze sp. z o.o. NZOZ Szpital Powiatowy",
+    "city": "Kamienna Góra",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.7863419,
+    "longitude": 16.0270131
+}, {
+    "id": "1533",
+    "name": "Powiatowe Centrum Zdrowia sp. z o.o., Kartuzy",
+    "city": "Kartuzy",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.3368632,
+    "longitude": 18.1969532
+}, {
     "id": "150000032",
     "name": "Wojewódzki Szpital Zespolony im. Dr Romana Ostrzyckiego w Koninie",
     "city": "Konin",
     "voivodeshipCode": "PL-PO",
     "latitude": 52.2270351,
     "longitude": 18.2655682
+}, {
+    "id": "3402008",
+    "name": "Powiatowe Centrum Zdrowia sp. z o.o. w Kowarach",
+    "city": "Kowary",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.8091869,
+    "longitude": 15.8387405
 }, {
     "id": "70001796",
     "name": "SPZZOZ w Kozienicach",
@@ -181,12 +321,33 @@
     "latitude": 52.084779,
     "longitude": 16.6473539
 }, {
+    "id": "001948-000095",
+    "name": "Szpital Specjalistyczny w Kościerzynie sp. z o.o.",
+    "city": "Kościerzyna",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.1227815,
+    "longitude": 17.9506472
+}, {
     "id": "150003571",
     "name": "SPZOZ w Krotoszynie",
     "city": "Krotoszyn",
     "voivodeshipCode": "PL-PO",
     "latitude": 51.64552,
     "longitude": 17.38157
+}, {
+    "id": "230160-130003",
+    "name": "NZOZ Kutnowski Szpital Samorządowy; SPZOZ w Kutnie",
+    "city": "Kutno",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 52.2388621,
+    "longitude": 19.371624
+}, {
+    "id": "840",
+    "name": "NZOZ Zdrowie",
+    "city": "Kwidzyn",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 53.7269105,
+    "longitude": 18.9205672
 }, {
     "id": "150003557",
     "name": "SPZOZ w Kępnie",
@@ -195,19 +356,26 @@
     "latitude": 51.2767727,
     "longitude": 17.9837786
 }, {
+    "id": "3201021",
+    "name": "Zespół Opieki Zdrowotnej w Kłodzku",
+    "city": "Kłodzko",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.4554026,
+    "longitude": 16.6591517
+}, {
+    "id": "3301161",
+    "name": "Wojewódzki Szpital Specjalistyczny w Legnicy",
+    "city": "Legnica",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.2079137,
+    "longitude": 16.21665
+}, {
     "id": "150003556",
     "name": "Wojewódzki Szpital Wielospecjalistyczny Im. Dr. Jana Jonstona w Lesznie",
     "city": "Leszno",
     "voivodeshipCode": "PL-PO",
     "latitude": 51.8392477,
     "longitude": 16.6069602
-}, {
-    "id": "20000550",
-    "name": "Niepubliczny Zakład Usług Medycznych \"Bra-Med\" w Lipnie utworzony przez Lecha Bramorskiego",
-    "city": "Lipno",
-    "voivodeshipCode": "PL-KP",
-    "latitude": 52.8439662,
-    "longitude": 19.1845553
 }, {
     "id": "20003719",
     "name": "NZOZ Szpital Lipno sp. z o.o.",
@@ -216,6 +384,13 @@
     "latitude": 52.8421363,
     "longitude": 19.1577404
 }, {
+    "id": "20000550",
+    "name": "Niepubliczny Zakład Usług Medycznych \"Bra-Med\" w Lipnie utworzony przez Lecha Bramorskiego",
+    "city": "Lipno",
+    "voivodeshipCode": "PL-KP",
+    "latitude": 52.8439662,
+    "longitude": 19.1845553
+}, {
     "id": "70001794",
     "name": "SPZZOZ w Lipsku",
     "city": "Lipsko",
@@ -223,12 +398,61 @@
     "latitude": 51.1594193,
     "longitude": 21.6570001
 }, {
+    "id": "3402018",
+    "name": "NZOZ Łużyckie Centrum Medyczne w Lubaniu sp. z o.o.",
+    "city": "Lubań",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.1161532,
+    "longitude": 15.2712193
+}, {
+    "id": "3302673-3301002",
+    "name": "Regionalne Centrum Zdrowia sp. z o.o.",
+    "city": "Lubin",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.4005097,
+    "longitude": 16.1994543
+}, {
+    "id": "3302127",
+    "name": "Centrum Zdrowia Kobiet \"Femina\" ",
+    "city": "Lubin",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.4014989,
+    "longitude": 16.2126288
+}, {
+    "id": "99",
+    "name": "SPSZOZ Lębork",
+    "city": "Lębork",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.5382359,
+    "longitude": 17.7514259
+}, {
     "id": "70001454",
     "name": "SPZOZ - Zespół Zakładów, Maków Mazowiecki",
     "city": "Maków Mazowiecki",
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.8617433,
     "longitude": 21.0870556
+}, {
+    "id": "1444",
+    "name": "Szpital im. Dr Jadwigi Obodzińskiej-Król w Malborku",
+    "city": "Malbork",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.0313698,
+    "longitude": 19.022147
+}, {
+    "id": "001963-001555",
+    "name": "Szpital Miejski w Miastku sp. z o.o.; Szpital Powiatu Bytowskiego sp. z o.o.",
+    "city": "Miastko",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.0127445,
+    "longitude": 16.9831533
+}, {
+    "id": "3102989-3101071",
+    "name": "Milickie Centrum Medyczne sp. z o.o.; ZPZOZ w Miliczu",
+    "city": "Milicz",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.5175399,
+    "longitude": 17.2613773
 }, {
     "id": "150001425",
     "name": "SPZOZ w Międzychodzie",
@@ -286,6 +510,20 @@
     "latitude": 52.6533218,
     "longitude": 16.8162465
 }, {
+    "id": "3101021",
+    "name": "Powiatowy Zespół Szpitali, Oleśnica",
+    "city": "Oleśnica",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.2082508,
+    "longitude": 17.3908464
+}, {
+    "id": "140045",
+    "name": "SPZOZ Szpital Powiatowy im. Edmunda Biernackiego w Opocznie",
+    "city": "Opoczno",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.3790267,
+    "longitude": 20.2789988
+}, {
     "id": "70001470",
     "name": "Mazowiecki Szpital Specjalistyczny im. Dr Józefa Psarskiego w Ostrołęce",
     "city": "Ostrołęka",
@@ -321,6 +559,20 @@
     "latitude": 52.0980112,
     "longitude": 21.2621429
 }, {
+    "id": "3101074",
+    "name": "Zespół Opieki Zdrowotnej w Oławie",
+    "city": "Oława",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.9514618,
+    "longitude": 17.2857246
+}, {
+    "id": "210084",
+    "name": "Pabianickie Centrum Medyczne sp. z o.o.",
+    "city": "Pabianice",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.651942,
+    "longitude": 19.3303188
+}, {
     "id": "70603688-70603095",
     "name": "NZOZ Szpital Św. Anny w Piasecznie",
     "city": "Piaseczno",
@@ -335,6 +587,20 @@
     "latitude": 51.4752618,
     "longitude": 21.4448031
 }, {
+    "id": "140039-140050",
+    "name": "Samodzielny Szpital Wojewódzki im. Mikołaja Kopernika; Powiatowe Centrum Medyczne w Piotrkowie Trybunalskim",
+    "city": "Piotrków Trybunalski",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.4004079,
+    "longitude": 19.6903178
+}, {
+    "id": "140039",
+    "name": "Samodzielny Szpital Wojewódzki im. Mikołaja Kopernika",
+    "city": "Piotrków Trybunalski",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.418731,
+    "longitude": 19.7141757
+}, {
     "id": "150000031",
     "name": "Szpital Specjalistyczny w Pile im. Stanisława Staszica",
     "city": "Piła",
@@ -348,6 +614,20 @@
     "voivodeshipCode": "PL-PO",
     "latitude": 51.8977707,
     "longitude": 17.7649302
+}, {
+    "id": "220338-120007",
+    "name": "Poddębickie Centrum Zdrowia; SPZOZ w Poddębicach",
+    "city": "Poddębice",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.9821732,
+    "longitude": 18.7858836
+}, {
+    "id": "3201001",
+    "name": "Specjalistyczne Centrum Medyczne im. Św. Jana Pawła II S.A.",
+    "city": "Polanica-Zdrój",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.4074643,
+    "longitude": 16.500614
 }, {
     "id": "150003180",
     "name": "Specjalistyczny Zespół Opieki Zdrowotnej Nad Matką i Dzieckiem w Poznaniu",
@@ -391,12 +671,12 @@
     "latitude": 53.0280389,
     "longitude": 20.895203
 }, {
-    "id": "70001995",
-    "name": "SPZOZ w Pułtusku",
-    "city": "Pułtusk",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.704166,
-    "longitude": 21.0866266
+    "id": "001943-000034",
+    "name": "Szpital Pucki sp. z o.o.; SPZOZ Szpital Im. Franciszka Żaczka",
+    "city": "Puck",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.720856,
+    "longitude": 18.414105
 }, {
     "id": "70605172-70001995",
     "name": "Szpital Powiatowy Gajda-Med sp. z o.o.; SPZOZ w Pułtusku",
@@ -404,6 +684,13 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.6941526,
     "longitude": 21.1141927
+}, {
+    "id": "70001995",
+    "name": "SPZOZ w Pułtusku",
+    "city": "Pułtusk",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.704166,
+    "longitude": 21.0866266
 }, {
     "id": "70100223",
     "name": "Płocki Zakład Opieki Zdrowotnej sp. z o.o.",
@@ -426,13 +713,6 @@
     "latitude": 52.6304312,
     "longitude": 20.3771485
 }, {
-    "id": "70300493-70001788",
-    "name": "Mazowiecki Szpital Specjalistyczny sp. z o.o.; Wojewódzki Szpital Specjalistyczny w Radomiu",
-    "city": "Radom",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 51.4380792,
-    "longitude": 21.158079
-}, {
     "id": "70001790",
     "name": "Radomski Szpital Specjalistyczny im. Dr Tytusa Chałubińskiego",
     "city": "Radom",
@@ -440,12 +720,33 @@
     "latitude": 51.3986413,
     "longitude": 21.1444901
 }, {
+    "id": "70300493-70001788",
+    "name": "Mazowiecki Szpital Specjalistyczny sp. z o.o.; Wojewódzki Szpital Specjalistyczny w Radomiu",
+    "city": "Radom",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 51.4380792,
+    "longitude": 21.158079
+}, {
+    "id": "140043",
+    "name": "Szpital Powiatowy w Radomsku",
+    "city": "Radomsko",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.0568465,
+    "longitude": 19.4592206
+}, {
     "id": "20000731",
     "name": "SPZOZ, Radziejów",
     "city": "Radziejów",
     "voivodeshipCode": "PL-KP",
     "latitude": 52.6191255,
     "longitude": 18.5171426
+}, {
+    "id": "130005-230170",
+    "name": "SPZOZ w Rawie Mazowieckiej; Amg Centrum Medyczne sp. z o.o.",
+    "city": "Rawa Mazowiecka",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.7661527,
+    "longitude": 20.2595723
 }, {
     "id": "150007789",
     "name": "Szpital Powiatowy w Rawiczu sp. z o.o.",
@@ -461,12 +762,12 @@
     "latitude": 53.0670607,
     "longitude": 19.4159979
 }, {
-    "id": "70603563-70001669",
-    "name": "Mazowiecki Szpital Wojewódzki im. Św. Jana Pawła II w Siedlcach sp. z o.o.; Wojewódzki Szpital Specjalistyczny w Siedlcach",
-    "city": "Siedlce",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.1775361,
-    "longitude": 22.2913172
+    "id": "210569",
+    "name": "GAMETA-SZPITAL sp. z o.o. i Wspólnicy - sp. k.",
+    "city": "Rzgów",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.6737114,
+    "longitude": 19.478748
 }, {
     "id": "70001664",
     "name": "SPZOZ w Siedlcach",
@@ -475,12 +776,33 @@
     "latitude": 52.1685254,
     "longitude": 22.285561
 }, {
+    "id": "70603563-70001669",
+    "name": "Mazowiecki Szpital Wojewódzki im. Św. Jana Pawła II w Siedlcach sp. z o.o.; Wojewódzki Szpital Specjalistyczny w Siedlcach",
+    "city": "Siedlce",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.1775361,
+    "longitude": 22.2913172
+}, {
+    "id": "120001",
+    "name": "Szpital Wojewódzki im. Prymasa Kardynała Stefana Wyszyńskiego w Sieradzu",
+    "city": "Sieradz",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.5818989,
+    "longitude": 18.7106526
+}, {
     "id": "70002137",
     "name": "SPZZOZ w Sierpcu",
     "city": "Sierpc",
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.8522724,
     "longitude": 19.675831
+}, {
+    "id": "130001",
+    "name": "Wojewódzki Szpital Zespolony im. Stanisława Rybickiego w Skierniewicach",
+    "city": "Skierniewice",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.9641323,
+    "longitude": 20.153764
 }, {
     "id": "70000983",
     "name": "Zespół Opieki Zdrowotnej SZPITALA POWIATOWEGO w Sochaczewie",
@@ -496,12 +818,33 @@
     "latitude": 52.4055052,
     "longitude": 22.2432954
 }, {
+    "id": "001596-000016",
+    "name": "Szpital Św. Jana",
+    "city": "Starogard Gdański",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 53.9670656,
+    "longitude": 18.5078305
+}, {
+    "id": "3101109-3102222",
+    "name": "Uniwersytecki Szpital Kliniczny im. Jana Mikulicza-Radeckiego we Wrocławiu; NZOZ Strzelińskie Centrum Medyczne",
+    "city": "Strzelin",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.787994,
+    "longitude": 17.0696114
+}, {
     "id": "150003604",
     "name": "SPZOZ w Szamotułach",
     "city": "Szamotuły",
     "voivodeshipCode": "PL-PO",
     "latitude": 52.6106658,
     "longitude": 16.5815048
+}, {
+    "id": "001805-001561",
+    "name": "American Heart of Poland S.A.; Szpital Polski Sztum",
+    "city": "Sztum",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 53.9225511,
+    "longitude": 19.0264098
 }, {
     "id": "20002787",
     "name": "NZOZ Nowy Szpital w Nakle i Szubinie sp. z o.o.",
@@ -517,6 +860,27 @@
     "latitude": 52.2911452,
     "longitude": 17.8733407
 }, {
+    "id": "13",
+    "name": "Szpital Specjalistyczny Słupsk",
+    "city": "Słupsk",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.4517571,
+    "longitude": 17.0645759
+}, {
+    "id": "1520",
+    "name": "Szpitale Tczewskie",
+    "city": "Tczew",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.0835744,
+    "longitude": 18.7904874
+}, {
+    "id": "240060",
+    "name": "Tomaszowskie Centrum Zdrowia",
+    "city": "Tomaszów Mazowiecki",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.5225389,
+    "longitude": 20.0057501
+}, {
     "id": "20000773",
     "name": "Wojewódzki Szpital Zespolony im. L. Rydygiera w Toruniu",
     "city": "Toruń",
@@ -530,6 +894,13 @@
     "voivodeshipCode": "PL-PO",
     "latitude": 53.0396379,
     "longitude": 16.4642394
+}, {
+    "id": "3101076",
+    "name": "Szpital im. Św. Jadwigi Śląskiej w Trzebnicy",
+    "city": "Trzebnica",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.3155808,
+    "longitude": 17.0614504
 }, {
     "id": "20002028",
     "name": "Szpital Tucholski sp. z o.o.",
@@ -545,13 +916,6 @@
     "latitude": 52.0102569,
     "longitude": 18.4908247
 }, {
-    "id": "70604614-70000968",
-    "name": "Szpital Praski p.w. Przemienienia Pańskiego",
-    "city": "Warszawa",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.2509409,
-    "longitude": 21.0281765
-}, {
     "id": "70000990",
     "name": "Międzyleski Szpital Specjalistyczny w Warszawie",
     "city": "Warszawa",
@@ -565,13 +929,6 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.2865334,
     "longitude": 20.9503055
-}, {
-    "id": "70001196",
-    "name": "Samodzielny Publiczny Szpital Kliniczny im. Prof. Witolda Orłowskiego Centrum Medycznego Kształcenia Podyplomowego w Warszawie",
-    "city": "Warszawa",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.2295796,
-    "longitude": 21.0325283
 }, {
     "id": "70000971",
     "name": "Szpital Bielański im. Ks. Jerzego Popiełuszki SPZOZ",
@@ -594,19 +951,40 @@
     "latitude": 52.2267825,
     "longitude": 20.9700536
 }, {
-    "id": "70603562-70000961",
-    "name": "Mazowiecki Szpital Bródnowski sp. z o.o.; Wojewódzki Szpital Bródnowski SPZOZ",
-    "city": "Warszawa",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.2909185,
-    "longitude": 21.0443596
-}, {
     "id": "70001273",
     "name": "Szpital Specjalistyczny im. Świętej Rodziny SPZOZ",
     "city": "Warszawa",
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.2039632,
     "longitude": 21.0175422
+}, {
+    "id": "70001062",
+    "name": "Państwowy Instytut Medyczny MSWiA w Warszawie",
+    "city": "Warszawa",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.1989309,
+    "longitude": 21.0005378
+}, {
+    "id": "70001198",
+    "name": "Uniwersyteckie Centrum Kliniczne Warszawskiego Uniwersytetu Medycznego",
+    "city": "Warszawa",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.2072875,
+    "longitude": 20.9840437
+}, {
+    "id": "70604614-70000968",
+    "name": "Szpital Praski p.w. Przemienienia Pańskiego",
+    "city": "Warszawa",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.2509409,
+    "longitude": 21.0281765
+}, {
+    "id": "70603562-70000961",
+    "name": "Mazowiecki Szpital Bródnowski sp. z o.o.; Wojewódzki Szpital Bródnowski SPZOZ",
+    "city": "Warszawa",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.2909185,
+    "longitude": 21.0443596
 }, {
     "id": "70603555",
     "name": "Warszawski Szpital Południowy sp. z o.o.",
@@ -622,20 +1000,6 @@
     "latitude": 52.2243023,
     "longitude": 20.9951078
 }, {
-    "id": "70603555-70000973",
-    "name": "Warszawski Szpital Południowy sp. z o.o.; SP ZZOZ Solec",
-    "city": "Warszawa",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.23539,
-    "longitude": 21.0303779
-}, {
-    "id": "70001062",
-    "name": "Państwowy Instytut Medyczny MSWiA w Warszawie",
-    "city": "Warszawa",
-    "voivodeshipCode": "PL-MZ",
-    "latitude": 52.1989309,
-    "longitude": 21.0005378
-}, {
     "id": "70000987",
     "name": "Centrum Medyczne Żelazna sp. z o.o.",
     "city": "Warszawa",
@@ -643,12 +1007,47 @@
     "latitude": 52.2408531,
     "longitude": 20.9867202
 }, {
-    "id": "70001198",
-    "name": "Uniwersyteckie Centrum Kliniczne Warszawskiego Uniwersytetu Medycznego",
+    "id": "70001196",
+    "name": "Samodzielny Publiczny Szpital Kliniczny im. Prof. Witolda Orłowskiego Centrum Medycznego Kształcenia Podyplomowego w Warszawie",
     "city": "Warszawa",
     "voivodeshipCode": "PL-MZ",
-    "latitude": 52.2072875,
-    "longitude": 20.9840437
+    "latitude": 52.2295796,
+    "longitude": 21.0325283
+}, {
+    "id": "70603555-70000973",
+    "name": "Warszawski Szpital Południowy sp. z o.o.; SP ZZOZ Solec",
+    "city": "Warszawa",
+    "voivodeshipCode": "PL-MZ",
+    "latitude": 52.23539,
+    "longitude": 21.0303779
+}, {
+    "id": "3201034",
+    "name": "Specjalistyczny Szpital Ginekologiczno-Położniczy im. E. Biernackiego w Wałbrzychu",
+    "city": "Wałbrzych",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.7719216,
+    "longitude": 16.2906624
+}, {
+    "id": "000120-000133",
+    "name": "Szpitale Pomorskie sp. z o.o.; Szpital Specjalistyczny w Wejherowie",
+    "city": "Wejherowo",
+    "voivodeshipCode": "PL-PM",
+    "latitude": 54.6143416,
+    "longitude": 18.2465854
+}, {
+    "id": "120004",
+    "name": "SPZOZ Wieluń",
+    "city": "Wieluń",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.2134051,
+    "longitude": 18.5647994
+}, {
+    "id": "220333",
+    "name": "Powiatowe Centrum Medyczne sp. z o.o. Szpital Powiatowy",
+    "city": "Wieruszów",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.2957122,
+    "longitude": 18.1655781
 }, {
     "id": "20002493",
     "name": "Novum-Med sp. z o.o.",
@@ -670,6 +1069,34 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.3462369,
     "longitude": 21.2214648
+}, {
+    "id": "3101057",
+    "name": "Wojewódzki Szpital Specjalistyczny we Wrocławiu",
+    "city": "Wrocław",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.1487285,
+    "longitude": 17.0451096
+}, {
+    "id": "3101107",
+    "name": "Uniwersytecki Szpital Kliniczny im. Jana Mikulicza-Radeckiego we Wrocławiu",
+    "city": "Wrocław",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.1105566,
+    "longitude": 17.0673835
+}, {
+    "id": "3101062",
+    "name": "Szpital Specjalistyczny im. A. Falkiewicza we Wrocławiu",
+    "city": "Wrocław",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.0637986,
+    "longitude": 17.0799235
+}, {
+    "id": "3101109-3101107",
+    "name": "Uniwersytecki Szpital Kliniczny im. Jana Mikulicza-Radeckiego we Wrocławiu",
+    "city": "Wrocław",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.0749018,
+    "longitude": 17.0273085
 }, {
     "id": "150007437",
     "name": "Szpital Powiatowy we Wrześni sp. z o.o.",
@@ -734,12 +1161,117 @@
     "latitude": 52.659482,
     "longitude": 19.0314672
 }, {
+    "id": "220003-120002",
+    "name": "Zduńskowolski Szpital Powiatowy sp. z o.o.; SP Zespół Opieki Zdrowotnej w Zduńskiej Woli",
+    "city": "Zduńska Wola",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.6041276,
+    "longitude": 18.9425614
+}, {
+    "id": "110013",
+    "name": "Wojewódzki Szpital Specjalistyczny im. Marii Skłodowskiej-Curie w Zgierzu",
+    "city": "Zgierz",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.8627546,
+    "longitude": 19.3911643
+}, {
+    "id": "3401029",
+    "name": "Wielospecjalistyczny Szpital - Samodzielny Publiczny Zespół Opieki Zdrowotnej w Zgorzelcu",
+    "city": "Zgorzelec",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.1578324,
+    "longitude": 15.0109637
+}, {
+    "id": "3202053",
+    "name": "Szpital Św. Antoniego w Ząbkowicach Śląskich",
+    "city": "Ząbkowice Śląskie",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.5873759,
+    "longitude": 16.8173967
+}, {
+    "id": "3302695-3301040",
+    "name": "Szpital Powiatowy im. A. Wolańczyka sp. z o.o.; ZOZ w Złotoryi",
+    "city": "Złotoryja",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.1161921,
+    "longitude": 15.9095388
+}, {
     "id": "150000011",
     "name": "Szpital Powiatowy im. Alfreda Sokołowskiego w Złotowie",
     "city": "Złotów",
     "voivodeshipCode": "PL-PO",
     "latitude": 53.3554552,
     "longitude": 17.0449343
+}, {
+    "id": "121/212358-160004141-220350-120006",
+    "name": "Szpitale Powiatowe sp. z o.o.; Szpital Łask; Powiatowy Zespół Poradni w Łasku sp. z o.o.",
+    "city": "Łask",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.5899905,
+    "longitude": 19.1528672
+}, {
+    "id": "130004",
+    "name": "Zespół Opieki Zdrowotnej w Łowiczu",
+    "city": "Łowicz",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 52.0989917,
+    "longitude": 19.9277716
+}, {
+    "id": "110076-110072",
+    "name": "Wojewódzki Specjalistyczny Szpital im. M. Pirogowa w Łodzi; Wojewódzki Specjalistyczny Szpital Im. M. Madurowicza",
+    "city": "Łódź",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.7531683,
+    "longitude": 19.4232105
+}, {
+    "id": "110006",
+    "name": "Instytut Centrum Zdrowia Matki Polki",
+    "city": "Łódź",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.70536,
+    "longitude": 19.479987
+}, {
+    "id": "210735-210317",
+    "name": "Medeor; Medeor Plus",
+    "city": "Łódź",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.7880665,
+    "longitude": 19.447026
+}, {
+    "id": "210005",
+    "name": "Salve sp. z o.o. S.K.",
+    "city": "Łódź",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.8042292,
+    "longitude": 19.3779606
+}, {
+    "id": "110058",
+    "name": "SPZOZ Centralny Szpital Kliniczny Uniwersytetu Medycznego w Łodzi",
+    "city": "Łódź",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.7746779,
+    "longitude": 19.5051298
+}, {
+    "id": "110058-110023",
+    "name": "SPZOZ Centralny Szpital Kliniczny Uniwersytetu Medycznego w Łodzi; Centrum Medyczne im. Dr Ludwika Rydygiera sp. z o.o.",
+    "city": "Łódź",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.777253,
+    "longitude": 19.4683302
+}, {
+    "id": "110043",
+    "name": "Wojewódzkie Wielospecjalistyczne Centrum Onkologii i Traumatologii im. M. Kopernika w Łodzi ",
+    "city": "Łódź",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 51.7313044,
+    "longitude": 19.4564868
+}, {
+    "id": "130002",
+    "name": "Zespół Opieki Zdrowotnej w Łęczycy",
+    "city": "Łęczyca",
+    "voivodeshipCode": "PL-LD",
+    "latitude": 52.0595254,
+    "longitude": 19.1876761
 }, {
     "id": "150008893-150003537",
     "name": "Szpital Powiatowy im. Tadeusza Malińskiego w Śremie sp. z o.o.; Szpital w  Śremie w likwidacji",
@@ -754,6 +1286,27 @@
     "voivodeshipCode": "PL-PO",
     "latitude": 52.227462,
     "longitude": 17.2849775
+}, {
+    "id": "3102045",
+    "name": "Polskie Centrum Zdrowia Środa Śląska sp. z o.o.",
+    "city": "Środa Śląska",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 51.1664765,
+    "longitude": 16.5940173
+}, {
+    "id": "3201023",
+    "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Świdnicy",
+    "city": "Świdnica",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.8323701,
+    "longitude": 16.4690083
+}, {
+    "id": "3202027",
+    "name": "Mikulicz sp. z o.o.",
+    "city": "Świebodzice",
+    "voivodeshipCode": "PL-DS",
+    "latitude": 50.8541455,
+    "longitude": 16.3217327
 }, {
     "id": "20002603",
     "name": "NZOZ Nowy Szpital sp. z o.o.",

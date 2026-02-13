@@ -30,7 +30,7 @@ async function createData() {
       };
     }));
 
-    return data;
+  return data;
 }
 
 function getArrowClass(oldValue: number, newValue: number) {
@@ -75,9 +75,12 @@ onMounted(async () => {
                   <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.city }} -
                     <span class="font-normal">
                       <template v-if="item.voivodeshipCode === 'PL-PO'">wielkopolskie</template>
-                    <template v-if="item.voivodeshipCode === 'PL-MZ'">mazowieckie</template>
-                    <template v-if="item.voivodeshipCode === 'PL-KP'">kujawsko-pomorskie</template>
-                  </span>
+                      <template v-if="item.voivodeshipCode === 'PL-MZ'">mazowieckie</template>
+                      <template v-if="item.voivodeshipCode === 'PL-KP'">kujawsko-pomorskie</template>
+                      <template v-if="item.voivodeshipCode === 'PL-DS'">dolnośląskie</template>
+                      <template v-if="item.voivodeshipCode === 'PL-LD'">łódzkie</template>
+                      <template v-if="item.voivodeshipCode === 'PL-PM'">pomorskie</template>
+                    </span>
                   </span>
                   <div class="text-lg font-medium mt-2">{{ item.name }}</div>
                 </div>
