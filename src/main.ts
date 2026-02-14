@@ -4,8 +4,8 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config';
 import {createHead} from '@unhead/vue/client'
 import HospitalStats from "./components/HospitalStats.vue";
-import HospitalList from "./components/HospitalList.vue";
-import Map from "./components/Map.vue";
+import HospitalListPage from "./pages/HospitalListPage.vue";
+import MapPage from './pages/MapPage.vue';
 import Aura from '@primeuix/themes/aura';
 
 
@@ -24,12 +24,12 @@ const routes = [
     {
         path: '/mapa',
         name: 'AllMap',
-        component: Map
+        component: MapPage
     },
     {
         path: '/szpitale',
         name: 'HospitalList',
-        component: HospitalList
+        component: HospitalListPage
     },
     {
         path: '/szpitale/:hospitalId',

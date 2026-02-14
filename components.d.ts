@@ -13,7 +13,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('primevue/button')['default']
     Divider: typeof import('primevue/divider')['default']
-    HospitalList: typeof import('./src/components/HospitalList.vue')['default']
     HospitalStats: typeof import('./src/components/HospitalStats.vue')['default']
     Image: typeof import('primevue/image')['default']
     LineChart: typeof import('./src/components/LineChart.vue')['default']
