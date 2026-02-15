@@ -91,6 +91,9 @@ onMounted(async () => {
                       <template v-if="item.voivodeshipCode === 'PL-DS'">dolnośląskie</template>
                       <template v-if="item.voivodeshipCode === 'PL-LD'">łódzkie</template>
                       <template v-if="item.voivodeshipCode === 'PL-PM'">pomorskie</template>
+                      <template v-if="item.voivodeshipCode === 'PL-LB'">lubuskie</template>
+                      <template v-if="item.voivodeshipCode === 'PL-ZP'">zachodniopomorskie</template>
+                      <template v-if="item.voivodeshipCode === 'PL-WN'">warmińsko-mazurskie</template>
                     </span>
                   </span>
                   <div class="text-lg font-medium mt-2">{{ item.name }}</div>

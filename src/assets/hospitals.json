@@ -6,12 +6,33 @@
     "latitude": 52.8738784,
     "longitude": 18.6970411
 }, {
+    "id": "160000731",
+    "name": "Szpital Barlinek sp. z o.o.",
+    "city": "Barlinek",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 52.9978754,
+    "longitude": 15.2245359
+}, {
     "id": "140042",
     "name": "Szpital Wojewódzki im. Jana Pawła II w Bełchatowie",
     "city": "Bełchatów",
     "voivodeshipCode": "PL-LD",
     "latitude": 51.3752991,
     "longitude": 19.3501753
+}, {
+    "id": "160001177",
+    "name": "Regionalne Centrum Medyczne w Białogradzie sp. z o.o.",
+    "city": "Białogard",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 54.0071329,
+    "longitude": 16.0077801
+}, {
+    "id": "160001177-160004141",
+    "name": "Regionalne Centrum Medyczne w Białogradzie sp. z o.o.; Szpitale Powiatowe sp. z o.o.",
+    "city": "Białogard",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 54.0068048,
+    "longitude": 15.971201
 }, {
     "id": "3401001",
     "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Bogatyni",
@@ -104,6 +125,13 @@
     "latitude": 53.7117853,
     "longitude": 17.547308
 }, {
+    "id": "160000665",
+    "name": "SPZOZ w Choszcznie",
+    "city": "Choszczno",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.1656561,
+    "longitude": 15.4135525
+}, {
     "id": "70001992",
     "name": "Specjalistyczny Szpital Wojewódzki w Ciechanowie",
     "city": "Ciechanów",
@@ -125,12 +153,33 @@
     "latitude": 53.6595144,
     "longitude": 17.3542445
 }, {
+    "id": "160004583-160004693-160000905",
+    "name": "American Heart of Poland S.A.; Szpitale Polskie S.A.; Szpital Powiatowy im. Matki Teresy z Kalkuty",
+    "city": "Drawsko Pomorskie",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.5248548,
+    "longitude": 15.8109238
+}, {
+    "id": "100043-040059",
+    "name": "Powiatowe Centrum Zdrowia sp. z o.o., Drezdenko; SPZOZ w likwidacji w Drezdenku",
+    "city": "Drezdenko",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.8343009,
+    "longitude": 15.8257303
+}, {
     "id": "3202112",
     "name": "NZOZ Szpital Powiatowy w Dzierżoniowie sp. z o.o.",
     "city": "Dzierżoniów",
     "voivodeshipCode": "PL-DS",
     "latitude": 50.7286301,
     "longitude": 16.6586022
+}, {
+    "id": "160000729",
+    "name": "Szpital w Dębnie im. Świętej Matki Teresy Z Kalkuty sp. z o.o.",
+    "city": "Dębno",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 52.7319125,
+    "longitude": 14.702696
 }, {
     "id": "70001663",
     "name": "SPZOZ w Garwolinie",
@@ -174,6 +223,13 @@
     "latitude": 52.5401413,
     "longitude": 17.6004578
 }, {
+    "id": "160000730",
+    "name": "Szpitalne Centrum Medyczne w Goleniowie sp. z o.o.",
+    "city": "Goleniów",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.569074,
+    "longitude": 14.8337271
+}, {
     "id": "20100026",
     "name": "Szpital Powiatowy sp. z o.o.",
     "city": "Golub-Dobrzyń",
@@ -187,6 +243,13 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.4694584,
     "longitude": 19.4976765
+}, {
+    "id": "20400",
+    "name": "Wielospecjalistyczny Szpital Wojewódzki w Gorzowie Wlkp. sp. z o.o.",
+    "city": "Gorzów Wielkopolski",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.7603815,
+    "longitude": 15.2350401
 }, {
     "id": "150001253",
     "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Gostyniu",
@@ -209,12 +272,33 @@
     "latitude": 53.4527007,
     "longitude": 18.7864785
 }, {
+    "id": "160000726",
+    "name": "SPZZOZ w Gryficach",
+    "city": "Gryfice",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.9238868,
+    "longitude": 15.1747689
+}, {
+    "id": "160003837",
+    "name": "Szpital Powiatowy w Gryfinie sp. z o.o.",
+    "city": "Gryfino",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.2549035,
+    "longitude": 14.4911118
+}, {
     "id": "70603339-70001797",
     "name": "Powiatowe Centrum Medyczne w Grójcu sp. z o.o.; SPZOZ w Grójcu",
     "city": "Grójec",
     "voivodeshipCode": "PL-MZ",
     "latitude": 51.8682256,
     "longitude": 20.8687258
+}, {
+    "id": "102779",
+    "name": "Nowy Szpital Powiatu Krośnieńskiego sp. z o.o.",
+    "city": "Gubin",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 51.9455911,
+    "longitude": 14.7268947
 }, {
     "id": "3102988-3101097",
     "name": "Polskie Centrum Zdrowia Góra Śląska sp. z o.o.; Samodzielny Publiczny Zespół Opieki Zdrowotnej w Górze w likwidacji",
@@ -279,6 +363,13 @@
     "latitude": 50.7863419,
     "longitude": 16.0270131
 }, {
+    "id": "160002979",
+    "name": "EMC Instytut Medyczny S.A.",
+    "city": "Kamień Pomorski",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.9690874,
+    "longitude": 14.7770656
+}, {
     "id": "1533",
     "name": "Powiatowe Centrum Zdrowia sp. z o.o., Kartuzy",
     "city": "Kartuzy",
@@ -292,6 +383,20 @@
     "voivodeshipCode": "PL-PO",
     "latitude": 52.2270351,
     "longitude": 18.2655682
+}, {
+    "id": "102712",
+    "name": "Nowy Szpital w Kostrzynie Nad Odrą sp. z o.o.",
+    "city": "Kostrzyn Nad Odrą",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.6078408,
+    "longitude": 14.6403432
+}, {
+    "id": "160000907",
+    "name": "Szpital Wojewódzki im. Mikołaja Kopernika w Koszalinie",
+    "city": "Koszalin",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 54.1993887,
+    "longitude": 16.2115941
 }, {
     "id": "3402008",
     "name": "Powiatowe Centrum Zdrowia sp. z o.o. w Kowarach",
@@ -314,6 +419,13 @@
     "latitude": 52.1849131,
     "longitude": 18.6188722
 }, {
+    "id": "160000735",
+    "name": "Regionalny Szpital w Kołobrzegu",
+    "city": "Kołobrzeg",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 54.1737895,
+    "longitude": 15.5693165
+}, {
     "id": "150001592",
     "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Kościanie",
     "city": "Kościan",
@@ -327,6 +439,13 @@
     "voivodeshipCode": "PL-PM",
     "latitude": 54.1227815,
     "longitude": 17.9506472
+}, {
+    "id": "100336-102779",
+    "name": "Zachodnie Centrum Medyczne; Nowy Szpital Powiatu Krośnieńskiego sp. z o.o.",
+    "city": "Krosno Odrzańskie",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.0570275,
+    "longitude": 15.0983541
 }, {
     "id": "150003571",
     "name": "SPZOZ w Krotoszynie",
@@ -461,6 +580,13 @@
     "latitude": 52.5994502,
     "longitude": 15.889771
 }, {
+    "id": "40184",
+    "name": "Szpital Międzyrzecki sp. z o.o.",
+    "city": "Międzyrzecz",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.4402144,
+    "longitude": 15.5842565
+}, {
     "id": "70001665",
     "name": "Samodzielny Publiczny Zespół Opieki Zdrowotnej, Mińsk Mazowiecki",
     "city": "Mińsk Mazowiecki",
@@ -482,12 +608,26 @@
     "latitude": 53.1233828,
     "longitude": 20.3707408
 }, {
+    "id": "40316",
+    "name": "Wielospecjalistyczny Szpital w Nowej Soli",
+    "city": "Nowa Sól",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 51.8060094,
+    "longitude": 15.6881351
+}, {
     "id": "70001799",
     "name": "SPZOZ w Nowym Mieście Nad Pilicą",
     "city": "Nowe Miasto Nad Pilicą",
     "voivodeshipCode": "PL-MZ",
     "latitude": 51.6160639,
     "longitude": 20.5647565
+}, {
+    "id": "160001932",
+    "name": "Samodzielny Publiczny Szpital Rejonowy w Nowogardzie",
+    "city": "Nowogard",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.6726827,
+    "longitude": 15.1098437
 }, {
     "id": "70000974",
     "name": "Nowodworskie Centrum Medyczne w Nowym Dworze Mazowieckim",
@@ -657,6 +797,13 @@
     "latitude": 52.4093922,
     "longitude": 16.8955726
 }, {
+    "id": "160005185",
+    "name": "Przyjazny Szpital w Połczynie Zdroju sp. z o.o.",
+    "city": "Połczyn-Zdrój",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.7629583,
+    "longitude": 16.0902267
+}, {
     "id": "70000993",
     "name": "SPZZOZ w Pruszkowie",
     "city": "Pruszków",
@@ -691,6 +838,13 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.704166,
     "longitude": 21.0866266
+}, {
+    "id": "160002713",
+    "name": "Szpital Powiatowy w Pyrzycach",
+    "city": "Pyrzyce",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.1469417,
+    "longitude": 14.8960334
 }, {
     "id": "70100223",
     "name": "Płocki Zakład Opieki Zdrowotnej sp. z o.o.",
@@ -804,6 +958,13 @@
     "latitude": 51.9641323,
     "longitude": 20.153764
 }, {
+    "id": "100324",
+    "name": "NZOZ Szpital im. Dr Nauk Medycznych Radzimira Śmigielskiego sp. z o.o.",
+    "city": "Skwierzyna",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.593576,
+    "longitude": 15.506336
+}, {
     "id": "70000983",
     "name": "Zespół Opieki Zdrowotnej SZPITALA POWIATOWEGO w Sochaczewie",
     "city": "Sochaczew",
@@ -817,6 +978,13 @@
     "voivodeshipCode": "PL-MZ",
     "latitude": 52.4055052,
     "longitude": 22.2432954
+}, {
+    "id": "160000725",
+    "name": "Samodzielny Publiczny Wielospecjalistyczny Zakład Opieki Zdrowotnej w Stargardzie",
+    "city": "Stargard",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.3428112,
+    "longitude": 15.036214
 }, {
     "id": "001596-000016",
     "name": "Szpital Św. Jana",
@@ -832,12 +1000,61 @@
     "latitude": 50.787994,
     "longitude": 17.0696114
 }, {
+    "id": "40299",
+    "name": "SPZOZ w Sulechowie",
+    "city": "Sulechów",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.0893613,
+    "longitude": 15.6226011
+}, {
+    "id": "40217",
+    "name": "SPZOZ Sulęcin",
+    "city": "Sulęcin",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.4373588,
+    "longitude": 15.1157496
+}, {
     "id": "150003604",
     "name": "SPZOZ w Szamotułach",
     "city": "Szamotuły",
     "voivodeshipCode": "PL-PO",
     "latitude": 52.6106658,
     "longitude": 16.5815048
+}, {
+    "id": "160000749",
+    "name": "Samodzielny Publiczny Szpital Kliniczny Nr 2 PUM w Szczecinie",
+    "city": "Szczecin",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.4082298,
+    "longitude": 14.529669
+}, {
+    "id": "160000761",
+    "name": "Samodzielny Publiczny Specjalistyczny Zakład Opieki Zdrowotnej ZDROJE",
+    "city": "Szczecin",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.3728015,
+    "longitude": 14.644309
+}, {
+    "id": "160000908",
+    "name": "Samodzielny Publiczny Szpital Kliniczny Nr 1 im. Prof. Tadeusza Sokołowskiego Pomorskiego Uniwersytetu Medycznego w Szczecinie",
+    "city": "Szczecin",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.4481634,
+    "longitude": 14.5054973
+}, {
+    "id": "160000762",
+    "name": "109 Szpital Wojskowy z Przychodnią SPZOZ",
+    "city": "Szczecin",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.4426177,
+    "longitude": 14.5415479
+}, {
+    "id": "160003874",
+    "name": "Szpital w Szczecinku sp. z o.o.",
+    "city": "Szczecinek",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.7125124,
+    "longitude": 16.678993
 }, {
     "id": "001805-001561",
     "name": "American Heart of Poland S.A.; Szpital Polski Sztum",
@@ -852,6 +1069,20 @@
     "voivodeshipCode": "PL-KP",
     "latitude": 53.0082432,
     "longitude": 17.7304202
+}, {
+    "id": "160002270",
+    "name": "Szpital Powiatowy w Sławnie",
+    "city": "Sławno",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 54.3692265,
+    "longitude": 16.6789823
+}, {
+    "id": "102803-040169",
+    "name": "NZOZ Szpital im. Prof. Zbigniewa Religi w Słubicach sp. z o.o.; SPZOZ w Słubicach",
+    "city": "Słubice",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.3515736,
+    "longitude": 14.5566143
 }, {
     "id": "150000013",
     "name": "SPZOZ w Słupcy",
@@ -1028,6 +1259,13 @@
     "latitude": 50.7719216,
     "longitude": 16.2906624
 }, {
+    "id": "160000760",
+    "name": "107 Szpital Wojskowy Z Przychodnią SPZOZ w Wałczu",
+    "city": "Wałcz",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.2831065,
+    "longitude": 16.460239
+}, {
     "id": "000120-000133",
     "name": "Szpitale Pomorskie sp. z o.o.; Szpital Specjalistyczny w Wejherowie",
     "city": "Wejherowo",
@@ -1105,6 +1343,13 @@
     "latitude": 52.3252059,
     "longitude": 17.573187
 }, {
+    "id": "20401",
+    "name": "Nowy Szpital we Wschowie sp. z o.o.",
+    "city": "Wschowa",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 51.8051362,
+    "longitude": 16.3230569
+}, {
     "id": "150008298-150000018",
     "name": "Szpital Powiatowy w Wyrzysku sp. z o.o.; Zespół Opieki Zdrowotnej Wyrzysk w likwidacji",
     "city": "Wyrzysk",
@@ -1181,6 +1426,13 @@
     "voivodeshipCode": "PL-DS",
     "latitude": 51.1578324,
     "longitude": 15.0109637
+}, {
+    "id": "20300",
+    "name": "Szpital Uniwersytecki Imienia Karola Marcinkowskiego w Zielonej Górze sp. z o.o.",
+    "city": "Zielona Góra",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 51.9409594,
+    "longitude": 15.5203357
 }, {
     "id": "3202053",
     "name": "Szpital Św. Antoniego w Ząbkowicach Śląskich",
@@ -1308,12 +1560,40 @@
     "latitude": 50.8541455,
     "longitude": 16.3217327
 }, {
+    "id": "102718",
+    "name": "Nowy Szpital w Świebodzinie sp. z o.o.",
+    "city": "Świebodzin",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 52.2520542,
+    "longitude": 15.5347464
+}, {
     "id": "20002603",
     "name": "NZOZ Nowy Szpital sp. z o.o.",
     "city": "Świecie",
     "voivodeshipCode": "PL-KP",
     "latitude": 53.4138574,
     "longitude": 18.4667693
+}, {
+    "id": "160000736",
+    "name": "Szpital Miejski im. Jana Garduły w Świnoujściu sp. z o.o.",
+    "city": "Świnoujście",
+    "voivodeshipCode": "PL-ZP",
+    "latitude": 53.9098098,
+    "longitude": 14.2584296
+}, {
+    "id": "020293-040098",
+    "name": "105 Kresowy Szpital Wojskowy Z Przychodnią SPZOZ w Żarach; SPZOZ w Żaganiu",
+    "city": "Żagań",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 51.6124839,
+    "longitude": 15.3319936
+}, {
+    "id": "102395",
+    "name": "Szpital Na Wyspie sp. z o.o.",
+    "city": "Żary",
+    "voivodeshipCode": "PL-LB",
+    "latitude": 51.6439137,
+    "longitude": 15.1533673
 }, {
     "id": "20002494",
     "name": "Pałuckie Centrum Zdrowia sp. z o.o.",

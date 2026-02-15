@@ -22,7 +22,7 @@ defineProps({
   },
   zoom: {
     type: Number,
-    default: 7
+    default: 6
   }
 });
 
