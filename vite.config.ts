@@ -46,7 +46,12 @@ export default defineConfig({
             hostname: 'https://statystykiporodow.pl/',
             dynamicRoutes: ['/szpitale', '/mapa', ...dynamicRoutes],
             changefreq: 'weekly',
-            priority: 0.8
+            priority: {
+                '/': 1,
+                '/mapa': 1,
+                '/szpitale': 1,
+                '*': 0.8
+            }
         })
     ]
 })
