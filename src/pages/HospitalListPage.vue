@@ -7,9 +7,17 @@ import { useRouter } from "vue-router";
 import DataView from 'primevue/dataview';
 import Button from 'primevue/button';
 import YearStatsRepository from "../repositories/YearStatsRepository.ts";
+import { useHead } from '@unhead/vue';
 
 const router = useRouter();
 
+useHead({
+    title: 'Statystyki porodów w Polsce 2010-2025 | Lista porodówek',
+    meta: [{
+        name: 'description',
+        content: 'Sprawdź, jak rodzi się w Twoim regionie. Wybierz porodówkę z listy i śprawdź statystyki.'
+    }]
+});
 
 async function createData() {
   const data = await Promise.all(
@@ -63,7 +71,10 @@ onMounted(async () => {
 </script>
 
 <template>
-
+  <h1 class="m-2">Lista porodówek w Polsce</h1>
+  <p class="m-2">
+      Zobacz, ile rocznie porodów odbywa się w danym szpitalu oraz jaki jest odsetek cesarskich cięć, nacięć krocza i znieczuleń – na podstawie danych NFZ.
+  </p>
   <DataView :value="dataTable" paginator :rows="10">
     <template #list="slotProps">
       <div class="flex flex-col">
