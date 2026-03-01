@@ -2,7 +2,7 @@
 
 import hospitals from '../assets/hospitals.json';
 import { StatsType } from "../common/StatsType.ts";
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import DataView from 'primevue/dataview';
 import Button from 'primevue/button';
@@ -10,13 +10,22 @@ import YearStatsRepository from "../repositories/YearStatsRepository.ts";
 import { useHead } from '@unhead/vue';
 
 const router = useRouter();
+const hospitalArray = ref([]);
+const sortKey = ref();
+const sortField = ref();
+const sortOrder = ref();
+const sortOptions = ref([
+  { label: 'Odsetek nacięć od najwyższego', value: '!episiotomies2025' },
+  { label: 'Odsetek nacięć od najniższego', value: 'episiotomies2025' },
+]);
+const nameOrCity = ref<string>();
 
 useHead({
-    title: 'Statystyki porodów w Polsce 2010-2025 | Lista porodówek',
-    meta: [{
-        name: 'description',
-        content: 'Sprawdź, jak rodzi się w Twoim regionie. Wybierz porodówkę z listy i śprawdź statystyki.'
-    }]
+  title: 'Statystyki porodów w Polsce 2010-2025 | Lista porodówek',
+  meta: [{
+    name: 'description',
+    content: 'Sprawdź, jak rodzi się w Twoim regionie. Wybierz porodówkę z listy i śprawdź statystyki.'
+  }]
 });
 
 async function createData() {
@@ -30,11 +39,11 @@ async function createData() {
         city: hospital.city,
         voivodeshipCode: hospital.voivodeshipCode,
         births2010: hospitalStats.statistics[StatsType.Births][0],
-        births2024: hospitalStats.statistics[StatsType.Births][13],
+        births2024: hospitalStats.statistics[StatsType.Births][14],
         cesareans2010: hospitalStats.statistics[StatsType.Cesareans][0],
-        cesareans2025: hospitalStats.statistics[StatsType.Cesareans][14],
+        cesareans2025: hospitalStats.statistics[StatsType.Cesareans][15],
         episiotomies2010: hospitalStats.statistics[StatsType.Episiotomies][0],
-        episiotomies2025: hospitalStats.statistics[StatsType.Episiotomies][14]
+        episiotomies2025: hospitalStats.statistics[StatsType.Episiotomies][15]
       };
     }));
 
@@ -58,24 +67,78 @@ function getArrowClass(oldValue: number, newValue: number) {
     : 'pi pi-arrow-down';
 }
 
-function show2025(item: any) {
+const show2025 = (item: any) => {
   return item.births2024 !== 0;
 }
 
-const dataTable = ref([]);
+const onSortChange = (event) => {
+  const value = event.value.value;
+  const sortValue = event.value;
+  console.log('onSortChange')
+
+  if (value.indexOf('!') === 0) {
+    sortOrder.value = -1;
+    sortField.value = value.replace('!', '');
+    sortKey.value = sortValue;
+  }
+  else {
+    sortOrder.value = 1;
+    sortField.value = value;
+    sortKey.value = sortValue;
+  }
+}
+
+
+const filterHospitals = computed(() => {
+  if (!nameOrCity.value) return hospitalArray.value;
+  return hospitalArray.value.filter(item =>
+    item.name.toLowerCase().includes(nameOrCity.value?.toLowerCase())
+    || item.city.toLowerCase().includes(nameOrCity.value?.toLowerCase()))
+});
+
+const mapVoivodeshipCodeToName = (voivodeshipCode) => {
+  switch (voivodeshipCode) {
+    case 'PL-DS': return 'dolnośląskie';
+    case 'PL-KP': return 'kujawsko-pomorskie';
+    case 'PL-LB': return 'lubuskie';
+    case 'PL-LD': return 'łódzkie';
+    case 'PL-LU': return 'lubelskie';
+    case 'PL-MA': return 'małopolskie';
+    case 'PL-MZ': return 'mazowieckie';
+    case 'PL-OP': return 'opolskie';
+    case 'PL-PD': return 'podlaskie';
+    case 'PL-PK': return 'podkarpackie';
+    case 'PL-PM': return 'pomorskie';
+    case 'PL-SK': return 'świętokrzyskie';
+    case 'PL-SL': return 'śląskie';
+    case 'PL-WN': return 'warmińsko-mazurskie';
+    case 'PL-WP': return 'wielkopolskie';
+    case 'PL-ZP': return 'zachodniopomorskie';
+  }
+};
 
 onMounted(async () => {
-  dataTable.value = await createData();
+  hospitalArray.value = await createData();
 })
 
 </script>
 
 <template>
-  <h1 class="m-2">Lista porodówek w Polsce</h1>
-  <p class="m-2">
-      Zobacz, ile rocznie porodów odbywa się w danym szpitalu oraz jaki jest odsetek cesarskich cięć, nacięć krocza i znieczuleń – na podstawie danych NFZ.
+  <h1 class="m-4">Lista porodówek w Polsce</h1>
+  <p class="m-4">
+    Zobacz, ile rocznie porodów odbywa się w danym szpitalu oraz jaki jest odsetek cesarskich cięć, nacięć krocza i
+    znieczuleń – na podstawie danych NFZ.
   </p>
-  <DataView :value="dataTable" paginator :rows="10">
+  <DataView :value="filterHospitals" paginator :sortField="sortField" :sortOrder="sortOrder" :rows="10">
+    <template #header>
+      <div class="flex flex-col">
+        <label for="nameOrCity">Nazwa lub miejscowość</label>
+        <InputText id="nameOrCity" type="text" v-model="nameOrCity" />
+      </div>
+
+      <Select v-if="false" v-model="sortKey" :options="sortOptions" optionLabel="label" placeholder="Sortowanie"
+        @change="onSortChange" />
+    </template>
     <template #list="slotProps">
       <div class="flex flex-col">
         <div v-for="(item, index) in slotProps.items" :key="index">
@@ -85,15 +148,7 @@ onMounted(async () => {
                 <div>
                   <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.city }} -
                     <span class="font-normal">
-                      <template v-if="item.voivodeshipCode === 'PL-PO'">wielkopolskie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-MZ'">mazowieckie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-KP'">kujawsko-pomorskie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-DS'">dolnośląskie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-LD'">łódzkie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-PM'">pomorskie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-LB'">lubuskie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-ZP'">zachodniopomorskie</template>
-                      <template v-if="item.voivodeshipCode === 'PL-WN'">warmińsko-mazurskie</template>
+                      {{ mapVoivodeshipCodeToName(item.voivodeshipCode) }}
                     </span>
                   </span>
                   <div class="text-lg font-medium mt-2">{{ item.name }}</div>
