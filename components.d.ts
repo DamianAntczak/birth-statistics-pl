@@ -12,7 +12,9 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('primevue/button')['default']
+    Card: typeof import('primevue/card')['default']
     Divider: typeof import('primevue/divider')['default']
+    FloatLabel: typeof import('primevue/floatlabel')['default']
     HospitalStats: typeof import('./src/components/HospitalStats.vue')['default']
     Image: typeof import('primevue/image')['default']
     InputText: typeof import('primevue/inputtext')['default']
@@ -25,5 +27,6 @@ declare module 'vue' {
     Select: typeof import('primevue/select')['default']
     SelectHospital: typeof import('./src/components/SelectHospital.vue')['default']
     SelectStatsType: typeof import('./src/components/SelectStatsType.vue')['default']
+    ToggleSwitch: typeof import('primevue/toggleswitch')['default']
   }
 }

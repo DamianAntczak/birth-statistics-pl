@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import Supercluster from 'supercluster'
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
-import { type PropType, ref } from "vue";
+import { type PropType, ref, watch } from "vue";
 
 import hospitals from '../assets/hospitals.json'
 import { useRouter } from "vue-router";
+import { ManOutline } from 'healthicons-vue';
 
 const router = useRouter();
 const mapRef = ref<any>(null);
@@ -14,7 +15,7 @@ interface Coordinates {
   longitude: number;
 }
 
-defineProps({
+const props = defineProps({
   center: {
     type: Object as PropType<Coordinates>,
     default: () => ({ latitude: 52.191097, longitude: 19.355406 }),
@@ -23,7 +24,15 @@ defineProps({
   zoom: {
     type: Number,
     default: 6
+  },
+  showAll: {
+    type: Boolean,
+    default: false
   }
+});
+
+watch(() => props.showAll, () => {
+  onMapReady();
 });
 
 
@@ -33,17 +42,20 @@ async function onMapReady() {
 
   const map = mapRef.value.leafletObject
 
-  const points = hospitals.map(hospital => ({
-    type: 'Feature',
-    properties: {
-      hospitalId: hospital.id,
-      name: hospital.name
-    },
-    geometry: {
-      type: 'Point',
-      coordinates: [hospital.longitude, hospital.latitude]
-    }
-  }))
+  const points = hospitals
+    .filter(hospital => props.showAll ? true : hospital.active === true)
+    .map(hospital => ({
+      type: 'Feature',
+      properties: {
+        hospitalId: hospital.id,
+        name: hospital.name,
+        active: hospital.active
+      },
+      geometry: {
+        type: 'Point',
+        coordinates: [hospital.longitude, hospital.latitude]
+      }
+    }))
 
   const index = new Supercluster({
     radius: 120,
@@ -86,7 +98,7 @@ async function onMapReady() {
 
         layer.addLayer(marker)
       } else {
-        const marker = L.marker([lat, lng])
+        const marker = L.marker([lat, lng], {opacity: feature.properties.active ? 1 : 0.4})
           .bindTooltip(feature.properties.name)
           .on('click', () => {
             router.push({
@@ -100,10 +112,16 @@ async function onMapReady() {
     })
   }
 
+  map.eachLayer((layer) => {
+    if (layer instanceof L.Marker) {
+      map.removeLayer(layer);
+    }
+  });
+
   map.on('moveend zoomend', renderClusters)
 
   renderClusters()
-  map.addLayer(layer)
+  map.addLayer(layer);
 }
 
 </script>
