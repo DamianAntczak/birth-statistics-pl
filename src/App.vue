@@ -31,6 +31,14 @@ const menuItems = ref<MenuItem[] | undefined>([
         <template #start>
           <Image src="/favicon.svg" alt="Logo statystykiporodow.pl" width="50" />
         </template>
+        <template #item="{ item, props }">
+          <router-link v-if="item.url" v-slot="{ href, navigate, isActive }" :to="item.url" custom>
+            <a :href="href" v-bind="props.action" @click="navigate" :class="{ 'active-menu-item': isActive }">
+                <span :class="item.icon" />
+                <span>{{ item.label }}</span>
+            </a>
+          </router-link>
+        </template>
       </menubar>
     </nav>
     <div class="max-w-7xl mx-auto px-*">
@@ -52,4 +60,8 @@ const menuItems = ref<MenuItem[] | undefined>([
   </HealthiconsProvider>
 </template>
 
-<style scoped></style>
+<style scoped>
+a.active-menu-item {
+  color: #e86a92ff;
+}
+</style>
