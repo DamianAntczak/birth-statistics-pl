@@ -1,12 +1,12 @@
 <script setup lang="ts">
 
-import SelectHospital from "./SelectHospital.vue";
-import LineChart from "./LineChart.vue";
-import SelectStatsType from "./SelectStatsType.vue";
+import SelectHospital from "../components/SelectHospital.vue";
+import LineChart from "../components/LineChart.vue";
+import SelectStatsType from "../components/SelectStatsType.vue";
 import { ref } from "vue";
 import { useHead } from "@unhead/vue";
 import { useRoute } from "vue-router";
-import Map from "./Map.vue";
+import Map from "../components/Map.vue";
 import hospitals from '../assets/hospitals.json';
 
 const statsType = ref()
@@ -65,11 +65,13 @@ function onHospitalChanged(payload: any) {
 </script>
 
 <template>
+  
+  <h2 v-if="hospital" class="text-2xl font-semibold">Szpital – {{ hospital.name }} w {{ hospital.city }}</h2>
+
   <div>
+
     <SelectHospital @hospitalChanged="onHospitalChanged" :stats-type="statsType" />
     <SelectStatsType @statsTypeChanged="onStatsTypeChanged($event)" :hospital-id="hospitalId" />
-    <h1 v-if="hospital" class="m-2">Statystyki porodów – {{ hospital.name }} w {{ hospital.city }}</h1>
-    <h1 v-else class="m-2">Statystyki porodów w Polsce 2010-2025</h1>
     <LineChart :hospital="hospital" :stats-type="statsType" />
     <Panel header="Źródło danych">
       Dane pochodzą z portalu <a

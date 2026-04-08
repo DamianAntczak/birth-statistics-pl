@@ -3,8 +3,9 @@ import './style.css'
 import App from './App.vue'
 import PrimeVue from 'primevue/config';
 import {createHead} from '@unhead/vue/client'
-import HospitalStats from "./components/HospitalStats.vue";
+import HospitalStatsPage from "./pages/HospitalStatsPage.vue";
 import HospitalListPage from "./pages/HospitalListPage.vue";
+import HomePage from './pages/HomePage.vue';
 import MapPage from './pages/MapPage.vue';
 import Aura from '@primeuix/themes/aura';
 
@@ -19,27 +20,32 @@ const routes = [
     {
         path: '/',
         name: 'StatsRoot',
-        component: HospitalStats
+        component: HospitalStatsPage,
+        meta: { title: 'Statystyki porodów w Polsce 2010-2025'}
     },
     {
         path: '/mapa',
         name: 'AllMap',
-        component: MapPage
+        component: MapPage,
+        meta: { title: 'Mapa porodówek w Polsce' }
     },
     {
         path: '/szpitale',
         name: 'HospitalList',
-        component: HospitalListPage
+        component: HospitalListPage,
+        meta: { title: 'Lista porodówek w Polsce' }
     },
     {
         path: '/szpitale/:hospitalId',
         name: 'StatsHospital',
-        component: HospitalStats
+        component: HospitalStatsPage,
+        meta: { title: 'Statystyki porodów w Polsce 2010-2025' }
     },
     {
         path: '/szpitale/:hospitalId/:statsType',
         name: 'StatsDetail',
-        component: HospitalStats
+        component: HospitalStatsPage,
+        meta: { title: 'Statystyki porodów w Polsce 2010-2025' }
     }
 ]
 

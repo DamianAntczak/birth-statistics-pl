@@ -14,8 +14,6 @@ declare module 'vue' {
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
     Divider: typeof import('primevue/divider')['default']
-    FloatLabel: typeof import('primevue/floatlabel')['default']
-    HospitalStats: typeof import('./src/components/HospitalStats.vue')['default']
     Image: typeof import('primevue/image')['default']
     InputText: typeof import('primevue/inputtext')['default']
     LineChart: typeof import('./src/components/LineChart.vue')['default']

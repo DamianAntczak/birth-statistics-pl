@@ -124,7 +124,6 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h1 class="m-4">Lista porodówek w Polsce</h1>
   <p class="m-4">
     Zobacz, ile rocznie porodów odbywa się w danym szpitalu oraz jaki jest odsetek cesarskich cięć, nacięć krocza i
     znieczuleń – na podstawie danych NFZ.

@@ -2,6 +2,7 @@
 import { HealthiconsProvider } from "healthicons-vue";
 import type { MenuItem } from "primevue/menuitem";
 import { ref } from "vue";
+import { useRoute } from "vue-router";
 
 
 const menuItems = ref<MenuItem[] | undefined>([
@@ -21,6 +22,9 @@ const menuItems = ref<MenuItem[] | undefined>([
     url: '/mapa'
   }
 ]);
+
+const route = useRoute();
+
 
 </script>
 
@@ -42,7 +46,15 @@ const menuItems = ref<MenuItem[] | undefined>([
       </menubar>
     </nav>
     <div class="max-w-7xl mx-auto px-*">
-      <RouterView />
+      <Card class="mt-4">
+        <template #content>
+            <h1 class="text-4xl font-bold">{{ route.meta.title }}</h1>
+
+            <Divider/>
+            <RouterView />
+
+          </template>
+        </Card>
       <footer>
         <div style="text-align: center">
           <Button label="Primary" variant="text">

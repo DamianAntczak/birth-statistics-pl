@@ -1,7 +1,18 @@
-# Statystyki porodów dla wybranego szpitala
+# 📊 Statystyki porodów dla szpitali
 
-[Sprawdź](https://statystykiporodow.pl/)
+Aplikacja prezentująca statystyki porodów na podstawie oficjalnych danych publicznych.
 
->Aktualnie dla porodówek w Wielkopolsce
+👉 **Sprawdź aplikację:**  
+[statystykiporodow.pl](https://statystykiporodow.pl/)
 
-Statystyki generowanie na podstawie danych z portalu [ezdrowie.gov.pl](https://ezdrowie.gov.pl/portal/home/badania-i-dane/zdrowe-dane/monitorowanie/porody-opieka-okoloporodowa).
+---
+
+## 🖼️ Podgląd aplikacji
+
+### 📍 Mapa szpitali
+
+![Mapa szpitali](./mapa.png)
+
+### 📊 Widok statystyk
+
+![Widok statystyk](./statystyki.png)
