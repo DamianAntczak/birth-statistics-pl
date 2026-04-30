@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { computed, ref, watch } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,9 +13,9 @@ import {
 } from 'chart.js'
 import { Line } from 'vue-chartjs'
 import * as chartConfig from '../common/chartConfig.ts'
-import type { GraphData } from '../common/GraphData.ts'
-import type { StatsType } from "../common/StatsType.ts";
+import { StatsType } from "../common/StatsType.ts";
 import YearStatsRepository from "../repositories/YearStatsRepository.ts";
+import polandStats from '../assets/poland-stats.json';
 
 
 ChartJS.register(
@@ -29,6 +29,7 @@ ChartJS.register(
 )
 
 const props = defineProps<{
+  poland?: boolean,
   hospital?: any,
   statsType?: string
 }>()
@@ -45,7 +46,20 @@ const options = computed(() => {
 const datasetLabels = chartConfig.datasetLabels;
 const datasetColors = chartConfig.datasetColors;
 
-async function updateChart(hospital: any, statsType: StatsType) {
+async function updateChart(poland: boolean, hospital: any, statsType: StatsType) {
+  if(poland) {
+    chartData.value = {
+      labels: polandStats.years,
+      datasets: [
+        {
+          label: datasetLabels.get(statsType),
+          backgroundColor: datasetColors.get(statsType),
+          data: polandStats.statistics[statsType]
+        }
+      ]
+    }
+  }
+
   if (!hospital) return;
 
   const data = await YearStatsRepository.getGraphData(hospital.voivodeshipCode, hospital.id);
@@ -70,11 +84,17 @@ watch(
   ([newHospital, newStatsType]) => {
 
     if (newHospital && newStatsType) {
-      updateChart(newHospital, newStatsType as StatsType);
+      updateChart(false, newHospital, newStatsType as StatsType);
     }
   }
 );
 
+onMounted(() => {
+  console.log('onMounted');
+  if(props.poland) {
+    updateChart(true, null, props.statsType as StatsType);
+  }
+});
 
 </script>
 

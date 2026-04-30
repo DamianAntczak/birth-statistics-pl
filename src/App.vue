@@ -45,7 +45,7 @@ const route = useRoute();
         </template>
       </menubar>
     </nav>
-    <div class="max-w-7xl mx-auto px-*">
+    <div class="mx-auto px-* main-container">
       <Card class="mt-4">
         <template #content>
             <h1 class="text-4xl font-bold">{{ route.meta.title }}</h1>
@@ -76,4 +76,10 @@ const route = useRoute();
 a.active-menu-item {
   color: #e86a92ff;
 }
+
+.main-container {
+  padding-left: clamp(2ch, 5%, 10ch);
+  padding-right: clamp(2ch, 5%, 10ch);
+}
+
 </style>

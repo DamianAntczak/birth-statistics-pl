@@ -5,7 +5,6 @@ import { type PropType, ref, watch } from "vue";
 
 import hospitals from '../assets/hospitals.json'
 import { useRouter } from "vue-router";
-import { ManOutline } from 'healthicons-vue';
 
 const router = useRouter();
 const mapRef = ref<any>(null);
@@ -129,7 +128,7 @@ async function onMapReady() {
 <template>
   <div>
     <client-only>
-      <div style="height:600px;">
+      <div style="height:500px;">
         <l-map ref="mapRef" :zoom="zoom" :center="[center.latitude, center.longitude]" :maxZoom="19"
           :use-global-leaflet="true" @ready="onMapReady">
           <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"

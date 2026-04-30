@@ -19,9 +19,9 @@ const routes = [
 
     {
         path: '/',
-        name: 'StatsRoot',
-        component: HospitalStatsPage,
-        meta: { title: 'Statystyki porodów w Polsce 2010-2025'}
+        name: 'HomePage',
+        component: HomePage,
+        meta: { title: 'Statystyki porodów w Polsce'}
     },
     {
         path: '/mapa',
