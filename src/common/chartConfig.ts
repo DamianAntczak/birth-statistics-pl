@@ -1,22 +1,30 @@
-import type {ChartOptions} from 'chart.js';
-import {StatsType} from "./StatsType.ts";
+import type { ChartOptions } from 'chart.js';
+import { StatsType } from "./StatsType.ts";
 
 export function createOptions(statisticType?: string): ChartOptions<'line'> {
-    return {
-        responsive: true,
-        maintainAspectRatio: true,
-        scales: {
-            y: {
-                beginAtZero: true,
-                max: statisticType === StatsType.Births
-                    ? 8000
-                    : 100,
-                ticks: {
-                    callback: (value) => statisticType == StatsType.Births ? value : value + '%'
+    return statisticType !== StatsType.Births ?
+        {
+            responsive: true,
+            maintainAspectRatio: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        callback: (value) => value + '%'
+                    }
                 }
             }
-        },
-    }
+        } : 
+        {
+            responsive: true,
+            maintainAspectRatio: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                }
+            }
+        }
 }
 
 
