@@ -35,6 +35,26 @@ function goToRandomHospital() {
     <div class="chart-container">
         <Card>
             <template #title>
+                Liczba porodów w Polsce w latach 2010-2025
+            </template>
+            <template #content>
+                <LineChart :poland="true" :stats-type="StatsType.Births"/>
+            </template>
+        </Card>
+
+        <Card>
+            <template #title>
+                Odsetek znieczuleń w Polsce w latach 2010-2025
+            </template>
+            <template #content>
+                <LineChart :poland="true" :stats-type="StatsType.Anesthesias"/>
+            </template>
+        </Card>
+    </div>
+
+    <div class="chart-container">
+        <Card>
+            <template #title>
                 Odsetek cięć cesarskich w Polsce w latach 2010-2025
             </template>
             <template #content>
