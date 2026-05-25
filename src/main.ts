@@ -14,6 +14,7 @@ import 'leaflet/dist/leaflet.css'
 import 'primeicons/primeicons.css'
 
 import {Menubar, Image} from "primevue";
+import { normalizeEntryToTags } from '@unhead/vue/utils';
 
 const routes = [
 
@@ -63,6 +64,9 @@ export const createApp = ViteSSG(
     ctx.app.use(PrimeVue, {
       theme: {
         preset: Aura,
+        options: {
+          darkModeSelector: false || 'none'
+        }
       },
     })
 
