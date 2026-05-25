@@ -5,7 +5,8 @@ export function createOptions(statisticType?: string): ChartOptions<'line'> {
     return statisticType !== StatsType.Births ?
         {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
+            aspectRatio: 1,
             scales: {
                 y: {
                     beginAtZero: true,
@@ -18,7 +19,8 @@ export function createOptions(statisticType?: string): ChartOptions<'line'> {
         } : 
         {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
+            aspectRatio: 1,
             scales: {
                 y: {
                     beginAtZero: true,
