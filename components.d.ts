@@ -18,7 +18,6 @@ declare module 'vue' {
     InputText: typeof import('primevue/inputtext')['default']
     LineChart: typeof import('./src/components/LineChart.vue')['default']
     Map: typeof import('./src/components/Map.vue')['default']
-    MapChart: typeof import('./src/components/map-chart/MapChart.vue')['default']
     Menubar: typeof import('primevue/menubar')['default']
     Panel: typeof import('primevue/panel')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

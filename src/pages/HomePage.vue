@@ -3,7 +3,6 @@ import { useRouter } from 'vue-router';
 import hospitals from '../assets/hospitals.json';
 import { StatsType } from "../common/StatsType.ts";
 import LineChart from '../components/LineChart.vue';
-import MapChart from '../components/map-chart/MapChart.vue';
 
 const hospitalArray = Object.values(hospitals);
 const hospitalSize = hospitalArray.length;
@@ -32,8 +31,6 @@ function goToRandomHospital() {
         Dzięki temu użytkowniczki i użytkownicy mogą łatwiej porównywać szpitale i podejmować bardziej świadome decyzje dotyczące
         wyboru miejsca porodu.
     </p>
-
-    <MapChart/>
 
     <div class="chart-container">
         <Card>
