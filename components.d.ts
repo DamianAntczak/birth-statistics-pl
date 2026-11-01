@@ -18,6 +18,7 @@ declare module 'vue' {
     InputText: typeof import('primevue/inputtext')['default']
     LineChart: typeof import('./src/components/LineChart.vue')['default']
     Map: typeof import('./src/components/Map.vue')['default']
+    MapChart: typeof import('./src/components/map-chart/MapChart.vue')['default']
     Menubar: typeof import('primevue/menubar')['default']
     Panel: typeof import('primevue/panel')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -25,6 +26,7 @@ declare module 'vue' {
     Select: typeof import('primevue/select')['default']
     SelectHospital: typeof import('./src/components/SelectHospital.vue')['default']
     SelectStatsType: typeof import('./src/components/SelectStatsType.vue')['default']
+    Slider: typeof import('primevue/slider')['default']
     ToggleSwitch: typeof import('primevue/toggleswitch')['default']
   }
 }
