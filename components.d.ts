@@ -26,6 +26,7 @@ declare module 'vue' {
     Select: typeof import('primevue/select')['default']
     SelectHospital: typeof import('./src/components/SelectHospital.vue')['default']
     SelectStatsType: typeof import('./src/components/SelectStatsType.vue')['default']
+    Slider: typeof import('primevue/slider')['default']
     ToggleSwitch: typeof import('primevue/toggleswitch')['default']
   }
 }
